@@ -1,0 +1,5 @@
+﻿  val4.c
+D:\Work\C\Day1\Day1\val4.c(19,9): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
+D:\Work\C\Day1\Day1\val4.c(19,9): warning C4313: 'printf': 서식 문자열의 '%s'이(가) int' 형식의 인수 1과(와) 충돌합니다.
+D:\Work\C\Day1\Day1\val4.c(22,2): error C2065: 'str2': 선언되지 않은 식별자입니다.
+D:\Work\C\Day1\Day1\val4.c(22,6): error C2109: 첨자는 배열 또는 포인터 형식을 사용해야 합니다.
