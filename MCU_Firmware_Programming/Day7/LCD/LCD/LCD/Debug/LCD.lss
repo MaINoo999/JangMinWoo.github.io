@@ -1,0 +1,359 @@
+
+LCD.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000010  00800100  00000196  0000020a  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000196  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000021a  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000024c  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000048  00000000  00000000  0000028c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000b60  00000000  00000000  000002d4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000008a3  00000000  00000000  00000e34  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000039e  00000000  00000000  000016d7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000080  00000000  00000000  00001a78  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000042c  00000000  00000000  00001af8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000262  00000000  00000000  00001f24  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000038  00000000  00000000  00002186  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e6 e9       	ldi	r30, 0x96	; 150
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 31       	cpi	r26, 0x10	; 16
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	61 d0       	rcall	.+194    	; 0x176 <main>
+  b4:	6e c0       	rjmp	.+220    	; 0x192 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <lcd_command>:
+// 파라미터: cmd - LCD에 보낼 명령어 코드
+// RS=0 (명령어), RW=0 (쓰기) 상태로 데이터 포트에 명령어 출력 후
+// EN핀에 펄스를 줘서 명령어가 인식되도록 함
+//------------------------------------------------------------------------------
+void lcd_command(uint8_t cmd) {
+    LCD_DATA_PORT = cmd;             // PORTB에 명령어 출력 (D0~D7)
+  b8:	88 bb       	out	0x18, r24	; 24
+    
+    LCD_CTRL_PORT &= ~_BV(LCD_RS);  // RS = 0 (명령어 모드)
+  ba:	e5 e6       	ldi	r30, 0x65	; 101
+  bc:	f0 e0       	ldi	r31, 0x00	; 0
+  be:	80 81       	ld	r24, Z
+  c0:	8e 7f       	andi	r24, 0xFE	; 254
+  c2:	80 83       	st	Z, r24
+    LCD_CTRL_PORT &= ~_BV(LCD_RW);  // RW = 0 (쓰기 모드)
+  c4:	80 81       	ld	r24, Z
+  c6:	8d 7f       	andi	r24, 0xFD	; 253
+  c8:	80 83       	st	Z, r24
+    
+    LCD_CTRL_PORT |= _BV(LCD_EN);   // EN = 1 (Enable 신호 시작)
+  ca:	80 81       	ld	r24, Z
+  cc:	84 60       	ori	r24, 0x04	; 4
+  ce:	80 83       	st	Z, r24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  d0:	85 e0       	ldi	r24, 0x05	; 5
+  d2:	8a 95       	dec	r24
+  d4:	f1 f7       	brne	.-4      	; 0xd2 <lcd_command+0x1a>
+  d6:	00 00       	nop
+    _delay_us(1);                   // 최소 450ns 이상 대기 (Enable 최소 High 시간)
+    LCD_CTRL_PORT &= ~_BV(LCD_EN);  // EN = 0 (Enable 신호 종료, LCD가 명령어 인식)
+  d8:	80 81       	ld	r24, Z
+  da:	8b 7f       	andi	r24, 0xFB	; 251
+  dc:	80 83       	st	Z, r24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  de:	8f e3       	ldi	r24, 0x3F	; 63
+  e0:	9f e1       	ldi	r25, 0x1F	; 31
+  e2:	01 97       	sbiw	r24, 0x01	; 1
+  e4:	f1 f7       	brne	.-4      	; 0xe2 <lcd_command+0x2a>
+  e6:	00 c0       	rjmp	.+0      	; 0xe8 <lcd_command+0x30>
+  e8:	00 00       	nop
+  ea:	08 95       	ret
+
+000000ec <lcd_data>:
+// 파라미터: data - LCD에 출력할 문자(ASCII 코드)
+// RS=1 (데이터 모드), RW=0 (쓰기) 상태로 데이터 포트에 문자 출력 후
+// EN핀에 펄스를 줘서 데이터가 인식되도록 함
+//------------------------------------------------------------------------------
+void lcd_data(uint8_t data) {
+    LCD_DATA_PORT = data;            // PORTB에 문자 데이터 출력
+  ec:	88 bb       	out	0x18, r24	; 24
+    
+    LCD_CTRL_PORT |= _BV(LCD_RS);   // RS = 1 (데이터 모드)
+  ee:	e5 e6       	ldi	r30, 0x65	; 101
+  f0:	f0 e0       	ldi	r31, 0x00	; 0
+  f2:	80 81       	ld	r24, Z
+  f4:	81 60       	ori	r24, 0x01	; 1
+  f6:	80 83       	st	Z, r24
+    LCD_CTRL_PORT &= ~_BV(LCD_RW);  // RW = 0 (쓰기 모드)
+  f8:	80 81       	ld	r24, Z
+  fa:	8d 7f       	andi	r24, 0xFD	; 253
+  fc:	80 83       	st	Z, r24
+    
+    LCD_CTRL_PORT |= _BV(LCD_EN);   // EN = 1 (Enable 신호 시작)
+  fe:	80 81       	ld	r24, Z
+ 100:	84 60       	ori	r24, 0x04	; 4
+ 102:	80 83       	st	Z, r24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 104:	85 e0       	ldi	r24, 0x05	; 5
+ 106:	8a 95       	dec	r24
+ 108:	f1 f7       	brne	.-4      	; 0x106 <lcd_data+0x1a>
+ 10a:	00 00       	nop
+    _delay_us(1);                   // 최소 450ns 이상 대기
+    LCD_CTRL_PORT &= ~_BV(LCD_EN);  // EN = 0 (Enable 신호 종료, LCD가 데이터 인식)
+ 10c:	80 81       	ld	r24, Z
+ 10e:	8b 7f       	andi	r24, 0xFB	; 251
+ 110:	80 83       	st	Z, r24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 112:	8f e3       	ldi	r24, 0x3F	; 63
+ 114:	9f e1       	ldi	r25, 0x1F	; 31
+ 116:	01 97       	sbiw	r24, 0x01	; 1
+ 118:	f1 f7       	brne	.-4      	; 0x116 <lcd_data+0x2a>
+ 11a:	00 c0       	rjmp	.+0      	; 0x11c <lcd_data+0x30>
+ 11c:	00 00       	nop
+ 11e:	08 95       	ret
+
+00000120 <lcd_init>:
+//------------------------------------------------------------------------------
+// LCD 초기화 함수
+// LCD와 MCU 포트 방향 설정, LCD 초기 명령어 전송 및 설정
+//------------------------------------------------------------------------------
+void lcd_init(void) {
+    LCD_DATA_DDR = 0xFF;                        // PORTB 전체 8비트 출력으로 설정 (데이터핀)
+ 120:	8f ef       	ldi	r24, 0xFF	; 255
+ 122:	87 bb       	out	0x17, r24	; 23
+    LCD_CTRL_DDR |= _BV(LCD_RS) | _BV(LCD_RW) | _BV(LCD_EN); // PG0,1,2 출력으로 설정 (제어핀)
+ 124:	e4 e6       	ldi	r30, 0x64	; 100
+ 126:	f0 e0       	ldi	r31, 0x00	; 0
+ 128:	80 81       	ld	r24, Z
+ 12a:	87 60       	ori	r24, 0x07	; 7
+ 12c:	80 83       	st	Z, r24
+ 12e:	2f ef       	ldi	r18, 0xFF	; 255
+ 130:	89 ef       	ldi	r24, 0xF9	; 249
+ 132:	90 e0       	ldi	r25, 0x00	; 0
+ 134:	21 50       	subi	r18, 0x01	; 1
+ 136:	80 40       	sbci	r24, 0x00	; 0
+ 138:	90 40       	sbci	r25, 0x00	; 0
+ 13a:	e1 f7       	brne	.-8      	; 0x134 <lcd_init+0x14>
+ 13c:	00 c0       	rjmp	.+0      	; 0x13e <lcd_init+0x1e>
+ 13e:	00 00       	nop
+    
+    _delay_ms(20);     // LCD 전원 안정화 대기 (최소 15~20ms 권장)
+    
+    lcd_command(LCD_FUNCTION_SET);  // LCD 기능 설정 (8비트, 2라인, 5x8 폰트)
+ 140:	88 e3       	ldi	r24, 0x38	; 56
+ 142:	ba df       	rcall	.-140    	; 0xb8 <lcd_command>
+    lcd_command(LCD_DISPLAY_ON);    // 디스플레이 ON, 커서 OFF, 깜빡임 OFF
+ 144:	8c e0       	ldi	r24, 0x0C	; 12
+ 146:	b8 df       	rcall	.-144    	; 0xb8 <lcd_command>
+    lcd_command(LCD_CLEAR);         // 화면 클리어 (커서 0,0 위치)
+ 148:	81 e0       	ldi	r24, 0x01	; 1
+ 14a:	b6 df       	rcall	.-148    	; 0xb8 <lcd_command>
+    lcd_command(LCD_ENTRY_MODE);    // 문자 입력 시 커서 오른쪽 이동
+ 14c:	86 e0       	ldi	r24, 0x06	; 6
+ 14e:	b4 cf       	rjmp	.-152    	; 0xb8 <lcd_command>
+ 150:	08 95       	ret
+
+00000152 <lcd_goto>:
+ 152:	81 11       	cpse	r24, r1
+    
+    // LCD DDRAM 주소는 1행 시작이 0x00, 2행 시작이 0x40임
+    if(row == 0)
+        addr = 0x00 + col;  // 1행 위치 계산
+    else
+        addr = 0x40 + col;  // 2행 위치 계산
+ 154:	60 5c       	subi	r22, 0xC0	; 192
+    
+    lcd_command(LCD_SET_DDRAM_ADDR | addr); // 커서 위치 설정 명령어 전송
+ 156:	86 2f       	mov	r24, r22
+ 158:	80 68       	ori	r24, 0x80	; 128
+ 15a:	ae cf       	rjmp	.-164    	; 0xb8 <lcd_command>
+ 15c:	08 95       	ret
+
+0000015e <lcd_string>:
+
+//------------------------------------------------------------------------------
+// 문자열 출력 함수
+// 입력받은 문자열 끝까지 한 글자씩 lcd_data 함수로 출력
+//------------------------------------------------------------------------------
+void lcd_string(const char* str) {
+ 15e:	cf 93       	push	r28
+ 160:	df 93       	push	r29
+ 162:	ec 01       	movw	r28, r24
+    while(*str) {
+ 164:	02 c0       	rjmp	.+4      	; 0x16a <lcd_string+0xc>
+        lcd_data(*str++);  // 현재 문자를 LCD에 출력하고 다음 문자로 이동
+ 166:	21 96       	adiw	r28, 0x01	; 1
+ 168:	c1 df       	rcall	.-126    	; 0xec <lcd_data>
+//------------------------------------------------------------------------------
+// 문자열 출력 함수
+// 입력받은 문자열 끝까지 한 글자씩 lcd_data 함수로 출력
+//------------------------------------------------------------------------------
+void lcd_string(const char* str) {
+    while(*str) {
+ 16a:	88 81       	ld	r24, Y
+ 16c:	81 11       	cpse	r24, r1
+ 16e:	fb cf       	rjmp	.-10     	; 0x166 <lcd_string+0x8>
+        lcd_data(*str++);  // 현재 문자를 LCD에 출력하고 다음 문자로 이동
+    }
+}
+ 170:	df 91       	pop	r29
+ 172:	cf 91       	pop	r28
+ 174:	08 95       	ret
+
+00000176 <main>:
+
+//------------------------------------------------------------------------------
+// 메인 함수
+//------------------------------------------------------------------------------
+int main(void) {
+    lcd_init();         // LCD 초기화 수행
+ 176:	d4 df       	rcall	.-88     	; 0x120 <lcd_init>
+    
+    lcd_goto(0, 0);     // 1행 1열 위치로 커서 이동
+ 178:	60 e0       	ldi	r22, 0x00	; 0
+ 17a:	80 e0       	ldi	r24, 0x00	; 0
+ 17c:	ea df       	rcall	.-44     	; 0x152 <lcd_goto>
+    lcd_string("Hello"); // "Hello" 문자열 LCD에 출력
+ 17e:	80 e0       	ldi	r24, 0x00	; 0
+ 180:	91 e0       	ldi	r25, 0x01	; 1
+ 182:	ed df       	rcall	.-38     	; 0x15e <lcd_string>
+    
+    lcd_goto(1, 0);     // 2행 1열 위치로 커서 이동
+ 184:	60 e0       	ldi	r22, 0x00	; 0
+ 186:	81 e0       	ldi	r24, 0x01	; 1
+ 188:	e4 df       	rcall	.-56     	; 0x152 <lcd_goto>
+    lcd_string("LCD Test2"); // "LCD Test" 문자열 출력
+ 18a:	86 e0       	ldi	r24, 0x06	; 6
+ 18c:	91 e0       	ldi	r25, 0x01	; 1
+ 18e:	e7 df       	rcall	.-50     	; 0x15e <lcd_string>
+ 190:	ff cf       	rjmp	.-2      	; 0x190 <main+0x1a>
+
+00000192 <_exit>:
+ 192:	f8 94       	cli
+
+00000194 <__stop_program>:
+ 194:	ff cf       	rjmp	.-2      	; 0x194 <__stop_program>

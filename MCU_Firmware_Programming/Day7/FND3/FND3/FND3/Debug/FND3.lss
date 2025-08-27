@@ -1,0 +1,639 @@
+
+FND3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000014  00800100  000003da  0000044e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000003da  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000462  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000494  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000030  00000000  00000000  000004d4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000009af  00000000  00000000  00000504  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000889  00000000  00000000  00000eb3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000003af  00000000  00000000  0000173c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000054  00000000  00000000  00001aec  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000447  00000000  00000000  00001b40  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000018e  00000000  00000000  00001f87  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000020  00000000  00000000  00002115  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ea ed       	ldi	r30, 0xDA	; 218
+  a0:	f3 e0       	ldi	r31, 0x03	; 3
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a4 31       	cpi	r26, 0x14	; 20
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	be d0       	rcall	.+380    	; 0x230 <main>
+  b4:	90 c1       	rjmp	.+800    	; 0x3d6 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <display_number>:
+	0b1101, // 십의 자리
+	0b1110  // 일의 자리
+};
+
+// 숫자를 FND에 출력
+void display_number(uint16_t number) {
+  b8:	cf 93       	push	r28
+  ba:	df 93       	push	r29
+  bc:	00 d0       	rcall	.+0      	; 0xbe <display_number+0x6>
+  be:	00 d0       	rcall	.+0      	; 0xc0 <display_number+0x8>
+  c0:	cd b7       	in	r28, 0x3d	; 61
+  c2:	de b7       	in	r29, 0x3e	; 62
+  c4:	ac 01       	movw	r20, r24
+	unsigned char digits[4];
+
+	// 숫자 각 자릿수 분해
+	digits[3] = number % 10;           // 1의 자리
+  c6:	9c 01       	movw	r18, r24
+  c8:	ad ec       	ldi	r26, 0xCD	; 205
+  ca:	bc ec       	ldi	r27, 0xCC	; 204
+  cc:	75 d1       	rcall	.+746    	; 0x3b8 <__umulhisi3>
+  ce:	96 95       	lsr	r25
+  d0:	87 95       	ror	r24
+  d2:	96 95       	lsr	r25
+  d4:	87 95       	ror	r24
+  d6:	96 95       	lsr	r25
+  d8:	87 95       	ror	r24
+  da:	9c 01       	movw	r18, r24
+  dc:	22 0f       	add	r18, r18
+  de:	33 1f       	adc	r19, r19
+  e0:	88 0f       	add	r24, r24
+  e2:	99 1f       	adc	r25, r25
+  e4:	88 0f       	add	r24, r24
+  e6:	99 1f       	adc	r25, r25
+  e8:	88 0f       	add	r24, r24
+  ea:	99 1f       	adc	r25, r25
+  ec:	82 0f       	add	r24, r18
+  ee:	93 1f       	adc	r25, r19
+  f0:	9a 01       	movw	r18, r20
+  f2:	28 1b       	sub	r18, r24
+  f4:	39 0b       	sbc	r19, r25
+  f6:	2c 83       	std	Y+4, r18	; 0x04
+	digits[2] = (number / 10) % 10;    // 10의 자리
+  f8:	9a 01       	movw	r18, r20
+  fa:	5e d1       	rcall	.+700    	; 0x3b8 <__umulhisi3>
+  fc:	fc 01       	movw	r30, r24
+  fe:	f6 95       	lsr	r31
+ 100:	e7 95       	ror	r30
+ 102:	f6 95       	lsr	r31
+ 104:	e7 95       	ror	r30
+ 106:	f6 95       	lsr	r31
+ 108:	e7 95       	ror	r30
+ 10a:	9f 01       	movw	r18, r30
+ 10c:	55 d1       	rcall	.+682    	; 0x3b8 <__umulhisi3>
+ 10e:	96 95       	lsr	r25
+ 110:	87 95       	ror	r24
+ 112:	96 95       	lsr	r25
+ 114:	87 95       	ror	r24
+ 116:	96 95       	lsr	r25
+ 118:	87 95       	ror	r24
+ 11a:	9c 01       	movw	r18, r24
+ 11c:	22 0f       	add	r18, r18
+ 11e:	33 1f       	adc	r19, r19
+ 120:	88 0f       	add	r24, r24
+ 122:	99 1f       	adc	r25, r25
+ 124:	88 0f       	add	r24, r24
+ 126:	99 1f       	adc	r25, r25
+ 128:	88 0f       	add	r24, r24
+ 12a:	99 1f       	adc	r25, r25
+ 12c:	82 0f       	add	r24, r18
+ 12e:	93 1f       	adc	r25, r19
+ 130:	9f 01       	movw	r18, r30
+ 132:	28 1b       	sub	r18, r24
+ 134:	39 0b       	sbc	r19, r25
+ 136:	2b 83       	std	Y+3, r18	; 0x03
+	digits[1] = (number / 100) % 10;   // 100의 자리
+ 138:	9a 01       	movw	r18, r20
+ 13a:	36 95       	lsr	r19
+ 13c:	27 95       	ror	r18
+ 13e:	36 95       	lsr	r19
+ 140:	27 95       	ror	r18
+ 142:	ab e7       	ldi	r26, 0x7B	; 123
+ 144:	b4 e1       	ldi	r27, 0x14	; 20
+ 146:	38 d1       	rcall	.+624    	; 0x3b8 <__umulhisi3>
+ 148:	fc 01       	movw	r30, r24
+ 14a:	f6 95       	lsr	r31
+ 14c:	e7 95       	ror	r30
+ 14e:	9f 01       	movw	r18, r30
+ 150:	ad ec       	ldi	r26, 0xCD	; 205
+ 152:	bc ec       	ldi	r27, 0xCC	; 204
+ 154:	31 d1       	rcall	.+610    	; 0x3b8 <__umulhisi3>
+ 156:	96 95       	lsr	r25
+ 158:	87 95       	ror	r24
+ 15a:	96 95       	lsr	r25
+ 15c:	87 95       	ror	r24
+ 15e:	96 95       	lsr	r25
+ 160:	87 95       	ror	r24
+ 162:	9c 01       	movw	r18, r24
+ 164:	22 0f       	add	r18, r18
+ 166:	33 1f       	adc	r19, r19
+ 168:	88 0f       	add	r24, r24
+ 16a:	99 1f       	adc	r25, r25
+ 16c:	88 0f       	add	r24, r24
+ 16e:	99 1f       	adc	r25, r25
+ 170:	88 0f       	add	r24, r24
+ 172:	99 1f       	adc	r25, r25
+ 174:	82 0f       	add	r24, r18
+ 176:	93 1f       	adc	r25, r19
+ 178:	9f 01       	movw	r18, r30
+ 17a:	28 1b       	sub	r18, r24
+ 17c:	39 0b       	sbc	r19, r25
+ 17e:	2a 83       	std	Y+2, r18	; 0x02
+	digits[0] = (number / 1000) % 10;  // 1000의 자리
+ 180:	9a 01       	movw	r18, r20
+ 182:	36 95       	lsr	r19
+ 184:	27 95       	ror	r18
+ 186:	36 95       	lsr	r19
+ 188:	27 95       	ror	r18
+ 18a:	36 95       	lsr	r19
+ 18c:	27 95       	ror	r18
+ 18e:	a5 ec       	ldi	r26, 0xC5	; 197
+ 190:	b0 e2       	ldi	r27, 0x20	; 32
+ 192:	12 d1       	rcall	.+548    	; 0x3b8 <__umulhisi3>
+ 194:	ac 01       	movw	r20, r24
+ 196:	52 95       	swap	r21
+ 198:	42 95       	swap	r20
+ 19a:	4f 70       	andi	r20, 0x0F	; 15
+ 19c:	45 27       	eor	r20, r21
+ 19e:	5f 70       	andi	r21, 0x0F	; 15
+ 1a0:	45 27       	eor	r20, r21
+ 1a2:	9a 01       	movw	r18, r20
+ 1a4:	ad ec       	ldi	r26, 0xCD	; 205
+ 1a6:	bc ec       	ldi	r27, 0xCC	; 204
+ 1a8:	07 d1       	rcall	.+526    	; 0x3b8 <__umulhisi3>
+ 1aa:	96 95       	lsr	r25
+ 1ac:	87 95       	ror	r24
+ 1ae:	96 95       	lsr	r25
+ 1b0:	87 95       	ror	r24
+ 1b2:	96 95       	lsr	r25
+ 1b4:	87 95       	ror	r24
+ 1b6:	9c 01       	movw	r18, r24
+ 1b8:	22 0f       	add	r18, r18
+ 1ba:	33 1f       	adc	r19, r19
+ 1bc:	88 0f       	add	r24, r24
+ 1be:	99 1f       	adc	r25, r25
+ 1c0:	88 0f       	add	r24, r24
+ 1c2:	99 1f       	adc	r25, r25
+ 1c4:	88 0f       	add	r24, r24
+ 1c6:	99 1f       	adc	r25, r25
+ 1c8:	82 0f       	add	r24, r18
+ 1ca:	93 1f       	adc	r25, r19
+ 1cc:	fa 01       	movw	r30, r20
+ 1ce:	e8 1b       	sub	r30, r24
+ 1d0:	f9 0b       	sbc	r31, r25
+ 1d2:	e9 83       	std	Y+1, r30	; 0x01
+
+	// 4자리 FND에 출력
+	for (int i = 0; i < 4; i++) {
+ 1d4:	80 e0       	ldi	r24, 0x00	; 0
+ 1d6:	90 e0       	ldi	r25, 0x00	; 0
+ 1d8:	19 c0       	rjmp	.+50     	; 0x20c <display_number+0x154>
+		PORTB = Font[digits[i]];    // 세그먼트 숫자 표시
+ 1da:	e1 e0       	ldi	r30, 0x01	; 1
+ 1dc:	f0 e0       	ldi	r31, 0x00	; 0
+ 1de:	ec 0f       	add	r30, r28
+ 1e0:	fd 1f       	adc	r31, r29
+ 1e2:	e8 0f       	add	r30, r24
+ 1e4:	f9 1f       	adc	r31, r25
+ 1e6:	e0 81       	ld	r30, Z
+ 1e8:	f0 e0       	ldi	r31, 0x00	; 0
+ 1ea:	ec 5f       	subi	r30, 0xFC	; 252
+ 1ec:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1ee:	20 81       	ld	r18, Z
+ 1f0:	28 bb       	out	0x18, r18	; 24
+		PORTG = digitSelect[i];     // 해당 자릿수 선택 (LOW로 활성화)
+ 1f2:	fc 01       	movw	r30, r24
+ 1f4:	e0 50       	subi	r30, 0x00	; 0
+ 1f6:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1f8:	20 81       	ld	r18, Z
+ 1fa:	20 93 65 00 	sts	0x0065, r18	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1fe:	e3 ef       	ldi	r30, 0xF3	; 243
+ 200:	f1 e0       	ldi	r31, 0x01	; 1
+ 202:	31 97       	sbiw	r30, 0x01	; 1
+ 204:	f1 f7       	brne	.-4      	; 0x202 <display_number+0x14a>
+ 206:	00 c0       	rjmp	.+0      	; 0x208 <display_number+0x150>
+ 208:	00 00       	nop
+	digits[2] = (number / 10) % 10;    // 10의 자리
+	digits[1] = (number / 100) % 10;   // 100의 자리
+	digits[0] = (number / 1000) % 10;  // 1000의 자리
+
+	// 4자리 FND에 출력
+	for (int i = 0; i < 4; i++) {
+ 20a:	01 96       	adiw	r24, 0x01	; 1
+ 20c:	84 30       	cpi	r24, 0x04	; 4
+ 20e:	91 05       	cpc	r25, r1
+ 210:	24 f3       	brlt	.-56     	; 0x1da <display_number+0x122>
+		PORTB = Font[digits[i]];    // 세그먼트 숫자 표시
+		PORTG = digitSelect[i];     // 해당 자릿수 선택 (LOW로 활성화)
+		_delay_ms(2);               // 짧은 표시 시간
+	}
+
+	PORTG = 0xFF;  // 모든 자릿수 비활성화
+ 212:	8f ef       	ldi	r24, 0xFF	; 255
+ 214:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+}
+ 218:	0f 90       	pop	r0
+ 21a:	0f 90       	pop	r0
+ 21c:	0f 90       	pop	r0
+ 21e:	0f 90       	pop	r0
+ 220:	df 91       	pop	r29
+ 222:	cf 91       	pop	r28
+ 224:	08 95       	ret
+
+00000226 <fnd_off>:
+
+// FND 끄기
+void fnd_off() {
+	PORTB = 0x00;  // 모든 세그먼트 OFF
+ 226:	18 ba       	out	0x18, r1	; 24
+	PORTG = 0xFF;  // 자릿수 OFF
+ 228:	8f ef       	ldi	r24, 0xFF	; 255
+ 22a:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+ 22e:	08 95       	ret
+
+00000230 <main>:
+}
+
+int main(void) {
+	// 포트 설정
+	DDRB = 0xFF;   // PORTB: 세그먼트 출력
+ 230:	8f ef       	ldi	r24, 0xFF	; 255
+ 232:	87 bb       	out	0x17, r24	; 23
+	DDRG = 0xFF;   // PORTG: 자릿수 선택
+ 234:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__TEXT_REGION_LENGTH__+0x7e0064>
+	DDRE = 0xFF;   // PORTE: LED 출력
+ 238:	82 b9       	out	0x02, r24	; 2
+	DDRD = 0x00;   // PORTD: 버튼 입력
+ 23a:	11 ba       	out	0x11, r1	; 17
+	PORTD = 0xFF;  // 내부 풀업 저항 활성화
+ 23c:	82 bb       	out	0x12, r24	; 18
+
+	// 초기 상태
+	PORTE = 0x00;  // LED OFF
+ 23e:	13 b8       	out	0x03, r1	; 3
+	PORTG = 0xFF;  // 자릿수 OFF
+ 240:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+	PORTB = 0x00;  // 세그먼트 OFF
+ 244:	18 ba       	out	0x18, r1	; 24
+
+	uint16_t counter = 0;         // 전체 숫자
+ 246:	c0 e0       	ldi	r28, 0x00	; 0
+ 248:	d0 e0       	ldi	r29, 0x00	; 0
+ 24a:	01 c0       	rjmp	.+2      	; 0x24e <main+0x1e>
+ 24c:	81 2f       	mov	r24, r17
+	uint8_t prev_buttons = 0xFF; // 이전 버튼 상태 (처음엔 전부 HIGH)
+
+	while (1) {
+		uint8_t buttons = PIND;                 // 현재 버튼 상태 읽기
+ 24e:	10 b3       	in	r17, 0x10	; 16
+		uint8_t pressed = prev_buttons & ~buttons; // 이전엔 HIGH, 현재 LOW → 새로 눌린 버튼만 추출
+ 250:	41 2f       	mov	r20, r17
+ 252:	40 95       	com	r20
+ 254:	48 23       	and	r20, r24
+
+		// 버튼별 동작
+		if (pressed & (1 << 0)) {       // PD0: 1의 자리 증가
+ 256:	40 ff       	sbrs	r20, 0
+ 258:	1c c0       	rjmp	.+56     	; 0x292 <main+0x62>
+			if ((counter % 10) < 9) {
+ 25a:	9e 01       	movw	r18, r28
+ 25c:	ad ec       	ldi	r26, 0xCD	; 205
+ 25e:	bc ec       	ldi	r27, 0xCC	; 204
+ 260:	ab d0       	rcall	.+342    	; 0x3b8 <__umulhisi3>
+ 262:	96 95       	lsr	r25
+ 264:	87 95       	ror	r24
+ 266:	96 95       	lsr	r25
+ 268:	87 95       	ror	r24
+ 26a:	96 95       	lsr	r25
+ 26c:	87 95       	ror	r24
+ 26e:	9c 01       	movw	r18, r24
+ 270:	22 0f       	add	r18, r18
+ 272:	33 1f       	adc	r19, r19
+ 274:	88 0f       	add	r24, r24
+ 276:	99 1f       	adc	r25, r25
+ 278:	88 0f       	add	r24, r24
+ 27a:	99 1f       	adc	r25, r25
+ 27c:	88 0f       	add	r24, r24
+ 27e:	99 1f       	adc	r25, r25
+ 280:	82 0f       	add	r24, r18
+ 282:	93 1f       	adc	r25, r19
+ 284:	9e 01       	movw	r18, r28
+ 286:	28 1b       	sub	r18, r24
+ 288:	39 0b       	sbc	r19, r25
+ 28a:	29 30       	cpi	r18, 0x09	; 9
+ 28c:	31 05       	cpc	r19, r1
+ 28e:	08 f4       	brcc	.+2      	; 0x292 <main+0x62>
+				counter += 1;
+ 290:	21 96       	adiw	r28, 0x01	; 1
+			}
+		}
+		if (pressed & (1 << 1)) {       // PD1: 10의 자리 증가
+ 292:	41 ff       	sbrs	r20, 1
+ 294:	25 c0       	rjmp	.+74     	; 0x2e0 <main+0xb0>
+			if (((counter / 10) % 10) < 9) {
+ 296:	9e 01       	movw	r18, r28
+ 298:	ad ec       	ldi	r26, 0xCD	; 205
+ 29a:	bc ec       	ldi	r27, 0xCC	; 204
+ 29c:	8d d0       	rcall	.+282    	; 0x3b8 <__umulhisi3>
+ 29e:	fc 01       	movw	r30, r24
+ 2a0:	f6 95       	lsr	r31
+ 2a2:	e7 95       	ror	r30
+ 2a4:	f6 95       	lsr	r31
+ 2a6:	e7 95       	ror	r30
+ 2a8:	f6 95       	lsr	r31
+ 2aa:	e7 95       	ror	r30
+ 2ac:	9f 01       	movw	r18, r30
+ 2ae:	84 d0       	rcall	.+264    	; 0x3b8 <__umulhisi3>
+ 2b0:	96 95       	lsr	r25
+ 2b2:	87 95       	ror	r24
+ 2b4:	96 95       	lsr	r25
+ 2b6:	87 95       	ror	r24
+ 2b8:	96 95       	lsr	r25
+ 2ba:	87 95       	ror	r24
+ 2bc:	9c 01       	movw	r18, r24
+ 2be:	22 0f       	add	r18, r18
+ 2c0:	33 1f       	adc	r19, r19
+ 2c2:	88 0f       	add	r24, r24
+ 2c4:	99 1f       	adc	r25, r25
+ 2c6:	88 0f       	add	r24, r24
+ 2c8:	99 1f       	adc	r25, r25
+ 2ca:	88 0f       	add	r24, r24
+ 2cc:	99 1f       	adc	r25, r25
+ 2ce:	82 0f       	add	r24, r18
+ 2d0:	93 1f       	adc	r25, r19
+ 2d2:	9f 01       	movw	r18, r30
+ 2d4:	28 1b       	sub	r18, r24
+ 2d6:	39 0b       	sbc	r19, r25
+ 2d8:	29 30       	cpi	r18, 0x09	; 9
+ 2da:	31 05       	cpc	r19, r1
+ 2dc:	08 f4       	brcc	.+2      	; 0x2e0 <main+0xb0>
+				counter += 10;
+ 2de:	2a 96       	adiw	r28, 0x0a	; 10
+			}
+		}
+		if (pressed & (1 << 2)) {       // PD2: 100의 자리 증가
+ 2e0:	42 ff       	sbrs	r20, 2
+ 2e2:	28 c0       	rjmp	.+80     	; 0x334 <main+0x104>
+			if (((counter / 100) % 10) < 9) {
+ 2e4:	9e 01       	movw	r18, r28
+ 2e6:	36 95       	lsr	r19
+ 2e8:	27 95       	ror	r18
+ 2ea:	36 95       	lsr	r19
+ 2ec:	27 95       	ror	r18
+ 2ee:	ab e7       	ldi	r26, 0x7B	; 123
+ 2f0:	b4 e1       	ldi	r27, 0x14	; 20
+ 2f2:	62 d0       	rcall	.+196    	; 0x3b8 <__umulhisi3>
+ 2f4:	fc 01       	movw	r30, r24
+ 2f6:	f6 95       	lsr	r31
+ 2f8:	e7 95       	ror	r30
+ 2fa:	9f 01       	movw	r18, r30
+ 2fc:	ad ec       	ldi	r26, 0xCD	; 205
+ 2fe:	bc ec       	ldi	r27, 0xCC	; 204
+ 300:	5b d0       	rcall	.+182    	; 0x3b8 <__umulhisi3>
+ 302:	96 95       	lsr	r25
+ 304:	87 95       	ror	r24
+ 306:	96 95       	lsr	r25
+ 308:	87 95       	ror	r24
+ 30a:	96 95       	lsr	r25
+ 30c:	87 95       	ror	r24
+ 30e:	9c 01       	movw	r18, r24
+ 310:	22 0f       	add	r18, r18
+ 312:	33 1f       	adc	r19, r19
+ 314:	88 0f       	add	r24, r24
+ 316:	99 1f       	adc	r25, r25
+ 318:	88 0f       	add	r24, r24
+ 31a:	99 1f       	adc	r25, r25
+ 31c:	88 0f       	add	r24, r24
+ 31e:	99 1f       	adc	r25, r25
+ 320:	82 0f       	add	r24, r18
+ 322:	93 1f       	adc	r25, r19
+ 324:	9f 01       	movw	r18, r30
+ 326:	28 1b       	sub	r18, r24
+ 328:	39 0b       	sbc	r19, r25
+ 32a:	29 30       	cpi	r18, 0x09	; 9
+ 32c:	31 05       	cpc	r19, r1
+ 32e:	10 f4       	brcc	.+4      	; 0x334 <main+0x104>
+				counter += 100;
+ 330:	cc 59       	subi	r28, 0x9C	; 156
+ 332:	df 4f       	sbci	r29, 0xFF	; 255
+			}
+		}
+		if (pressed & (1 << 3)) {       // PD3: 1000의 자리 증가
+ 334:	43 ff       	sbrs	r20, 3
+ 336:	2e c0       	rjmp	.+92     	; 0x394 <main+0x164>
+			if (((counter / 1000) % 10) < 9) {
+ 338:	9e 01       	movw	r18, r28
+ 33a:	36 95       	lsr	r19
+ 33c:	27 95       	ror	r18
+ 33e:	36 95       	lsr	r19
+ 340:	27 95       	ror	r18
+ 342:	36 95       	lsr	r19
+ 344:	27 95       	ror	r18
+ 346:	a5 ec       	ldi	r26, 0xC5	; 197
+ 348:	b0 e2       	ldi	r27, 0x20	; 32
+ 34a:	36 d0       	rcall	.+108    	; 0x3b8 <__umulhisi3>
+ 34c:	fc 01       	movw	r30, r24
+ 34e:	f2 95       	swap	r31
+ 350:	e2 95       	swap	r30
+ 352:	ef 70       	andi	r30, 0x0F	; 15
+ 354:	ef 27       	eor	r30, r31
+ 356:	ff 70       	andi	r31, 0x0F	; 15
+ 358:	ef 27       	eor	r30, r31
+ 35a:	9f 01       	movw	r18, r30
+ 35c:	ad ec       	ldi	r26, 0xCD	; 205
+ 35e:	bc ec       	ldi	r27, 0xCC	; 204
+ 360:	2b d0       	rcall	.+86     	; 0x3b8 <__umulhisi3>
+ 362:	96 95       	lsr	r25
+ 364:	87 95       	ror	r24
+ 366:	96 95       	lsr	r25
+ 368:	87 95       	ror	r24
+ 36a:	96 95       	lsr	r25
+ 36c:	87 95       	ror	r24
+ 36e:	9c 01       	movw	r18, r24
+ 370:	22 0f       	add	r18, r18
+ 372:	33 1f       	adc	r19, r19
+ 374:	88 0f       	add	r24, r24
+ 376:	99 1f       	adc	r25, r25
+ 378:	88 0f       	add	r24, r24
+ 37a:	99 1f       	adc	r25, r25
+ 37c:	88 0f       	add	r24, r24
+ 37e:	99 1f       	adc	r25, r25
+ 380:	82 0f       	add	r24, r18
+ 382:	93 1f       	adc	r25, r19
+ 384:	9f 01       	movw	r18, r30
+ 386:	28 1b       	sub	r18, r24
+ 388:	39 0b       	sbc	r19, r25
+ 38a:	29 30       	cpi	r18, 0x09	; 9
+ 38c:	31 05       	cpc	r19, r1
+ 38e:	10 f4       	brcc	.+4      	; 0x394 <main+0x164>
+				counter += 1000;
+ 390:	c8 51       	subi	r28, 0x18	; 24
+ 392:	dc 4f       	sbci	r29, 0xFC	; 252
+			}
+		}
+		if (pressed & (1 << 4)) {       // PD4: 초기화
+ 394:	44 ff       	sbrs	r20, 4
+ 396:	02 c0       	rjmp	.+4      	; 0x39c <main+0x16c>
+			counter = 0;
+ 398:	c0 e0       	ldi	r28, 0x00	; 0
+ 39a:	d0 e0       	ldi	r29, 0x00	; 0
+		}
+
+		// 최대 9999로 제한
+		if (counter > 9999) counter = 9999;
+ 39c:	c0 31       	cpi	r28, 0x10	; 16
+ 39e:	37 e2       	ldi	r19, 0x27	; 39
+ 3a0:	d3 07       	cpc	r29, r19
+ 3a2:	10 f0       	brcs	.+4      	; 0x3a8 <main+0x178>
+ 3a4:	cf e0       	ldi	r28, 0x0F	; 15
+
+		prev_buttons = buttons;      // 이전 버튼 상태 갱신
+		PORTE = buttons;             // 현재 버튼 상태를 LED로 표시
+ 3a6:	d7 e2       	ldi	r29, 0x27	; 39
+
+		// 버튼이 하나라도 눌려 있으면 숫자 표시
+		if (buttons != 0xFF) {
+ 3a8:	13 b9       	out	0x03, r17	; 3
+ 3aa:	1f 3f       	cpi	r17, 0xFF	; 255
+			display_number(counter);
+ 3ac:	19 f0       	breq	.+6      	; 0x3b4 <main+0x184>
+ 3ae:	ce 01       	movw	r24, r28
+ 3b0:	83 de       	rcall	.-762    	; 0xb8 <display_number>
+ 3b2:	4c cf       	rjmp	.-360    	; 0x24c <main+0x1c>
+			} else {
+			fnd_off();  // 버튼 안 눌리면 꺼짐
+ 3b4:	38 df       	rcall	.-400    	; 0x226 <fnd_off>
+ 3b6:	4a cf       	rjmp	.-364    	; 0x24c <main+0x1c>
+
+000003b8 <__umulhisi3>:
+ 3b8:	a2 9f       	mul	r26, r18
+ 3ba:	b0 01       	movw	r22, r0
+ 3bc:	b3 9f       	mul	r27, r19
+ 3be:	c0 01       	movw	r24, r0
+ 3c0:	a3 9f       	mul	r26, r19
+ 3c2:	70 0d       	add	r23, r0
+ 3c4:	81 1d       	adc	r24, r1
+ 3c6:	11 24       	eor	r1, r1
+ 3c8:	91 1d       	adc	r25, r1
+ 3ca:	b2 9f       	mul	r27, r18
+ 3cc:	70 0d       	add	r23, r0
+ 3ce:	81 1d       	adc	r24, r1
+ 3d0:	11 24       	eor	r1, r1
+ 3d2:	91 1d       	adc	r25, r1
+ 3d4:	08 95       	ret
+
+000003d6 <_exit>:
+ 3d6:	f8 94       	cli
+
+000003d8 <__stop_program>:
+ 3d8:	ff cf       	rjmp	.-2      	; 0x3d8 <__stop_program>
