@@ -1,0 +1,424 @@
+
+LED-Segment-CDS.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000006  00800100  00000204  00000298  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000204  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000004  00800106  00800106  0000029e  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000029e  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000002d0  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000038  00000000  00000000  00000310  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000a40  00000000  00000000  00000348  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000008bf  00000000  00000000  00000d88  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000003ae  00000000  00000000  00001647  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000068  00000000  00000000  000019f8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000004c7  00000000  00000000  00001a60  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000001a1  00000000  00000000  00001f27  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000040  00000000  00000000  000020c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	39 c0       	rjmp	.+114    	; 0xc8 <__vector_21>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e4 e0       	ldi	r30, 0x04	; 4
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a6 30       	cpi	r26, 0x06	; 6
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a6 e0       	ldi	r26, 0x06	; 6
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	aa 30       	cpi	r26, 0x0A	; 10
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	5a d0       	rcall	.+180    	; 0x178 <main>
+  c4:	9d c0       	rjmp	.+314    	; 0x200 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <__vector_21>:
+// 0%, 20%, 40%, 60%, 80%, 100% (0~255 범위)
+const unsigned char brightness_levels[6] = {0, 51, 102, 153, 204, 255};
+
+unsigned char led_brightness = 0;   // 현재 LED 밝기 (0~255)
+
+ISR(ADC_vect) {
+  c8:	1f 92       	push	r1
+  ca:	0f 92       	push	r0
+  cc:	0f b6       	in	r0, 0x3f	; 63
+  ce:	0f 92       	push	r0
+  d0:	11 24       	eor	r1, r1
+  d2:	8f 93       	push	r24
+  d4:	9f 93       	push	r25
+	adc_data = ADCW;
+  d6:	84 b1       	in	r24, 0x04	; 4
+  d8:	95 b1       	in	r25, 0x05	; 5
+  da:	90 93 09 01 	sts	0x0109, r25	; 0x800109 <adc_data+0x1>
+  de:	80 93 08 01 	sts	0x0108, r24	; 0x800108 <adc_data>
+	ADCSRA |= (1 << ADSC);  // 다음 ADC 변환 시작
+  e2:	86 b1       	in	r24, 0x06	; 6
+  e4:	80 64       	ori	r24, 0x40	; 64
+  e6:	86 b9       	out	0x06, r24	; 6
+}
+  e8:	9f 91       	pop	r25
+  ea:	8f 91       	pop	r24
+  ec:	0f 90       	pop	r0
+  ee:	0f be       	out	0x3f, r0	; 63
+  f0:	0f 90       	pop	r0
+  f2:	1f 90       	pop	r1
+  f4:	18 95       	reti
+
+000000f6 <Set_LED_Brightness>:
+void Set_LED_Brightness(unsigned int adc_val) {
+	const unsigned int threshold_min = 0;
+	const unsigned int threshold_max = 700;
+
+	if (adc_val < threshold_min) adc_val = threshold_min;
+	if (adc_val > threshold_max) adc_val = threshold_max;
+  f6:	8d 3b       	cpi	r24, 0xBD	; 189
+  f8:	22 e0       	ldi	r18, 0x02	; 2
+  fa:	92 07       	cpc	r25, r18
+  fc:	10 f0       	brcs	.+4      	; 0x102 <Set_LED_Brightness+0xc>
+  fe:	8c eb       	ldi	r24, 0xBC	; 188
+ 100:	92 e0       	ldi	r25, 0x02	; 2
+
+	// 전체 밝기 역비례 계산
+	unsigned char overall_brightness = (unsigned char)((threshold_max - adc_val) * 255 / (threshold_max - threshold_min));
+ 102:	41 e0       	ldi	r20, 0x01	; 1
+ 104:	48 9f       	mul	r20, r24
+ 106:	90 01       	movw	r18, r0
+ 108:	49 9f       	mul	r20, r25
+ 10a:	30 0d       	add	r19, r0
+ 10c:	38 1b       	sub	r19, r24
+ 10e:	11 24       	eor	r1, r1
+ 110:	c9 01       	movw	r24, r18
+ 112:	8c 5b       	subi	r24, 0xBC	; 188
+ 114:	96 44       	sbci	r25, 0x46	; 70
+ 116:	6c eb       	ldi	r22, 0xBC	; 188
+ 118:	72 e0       	ldi	r23, 0x02	; 2
+ 11a:	5e d0       	rcall	.+188    	; 0x1d8 <__udivmodhi4>
+
+	// 6단계 중 가장 가까운 밝기 선택
+	unsigned char min_diff = 255;
+	unsigned char quantized_level = 0;
+
+	for (int i = 0; i < 6; i++) {
+ 11c:	80 e0       	ldi	r24, 0x00	; 0
+ 11e:	90 e0       	ldi	r25, 0x00	; 0
+	// 전체 밝기 역비례 계산
+	unsigned char overall_brightness = (unsigned char)((threshold_max - adc_val) * 255 / (threshold_max - threshold_min));
+
+	// 6단계 중 가장 가까운 밝기 선택
+	unsigned char min_diff = 255;
+	unsigned char quantized_level = 0;
+ 120:	50 e0       	ldi	r21, 0x00	; 0
+
+	// 전체 밝기 역비례 계산
+	unsigned char overall_brightness = (unsigned char)((threshold_max - adc_val) * 255 / (threshold_max - threshold_min));
+
+	// 6단계 중 가장 가까운 밝기 선택
+	unsigned char min_diff = 255;
+ 122:	4f ef       	ldi	r20, 0xFF	; 255
+	unsigned char quantized_level = 0;
+
+	for (int i = 0; i < 6; i++) {
+ 124:	10 c0       	rjmp	.+32     	; 0x146 <Set_LED_Brightness+0x50>
+		unsigned char diff = (overall_brightness > brightness_levels[i]) ? (overall_brightness - brightness_levels[i]) : (brightness_levels[i] - overall_brightness);
+ 126:	fc 01       	movw	r30, r24
+ 128:	e0 50       	subi	r30, 0x00	; 0
+ 12a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 12c:	20 81       	ld	r18, Z
+ 12e:	26 17       	cp	r18, r22
+ 130:	18 f4       	brcc	.+6      	; 0x138 <Set_LED_Brightness+0x42>
+ 132:	36 2f       	mov	r19, r22
+ 134:	32 1b       	sub	r19, r18
+ 136:	02 c0       	rjmp	.+4      	; 0x13c <Set_LED_Brightness+0x46>
+ 138:	32 2f       	mov	r19, r18
+ 13a:	36 1b       	sub	r19, r22
+		if (diff < min_diff) {
+ 13c:	34 17       	cp	r19, r20
+ 13e:	10 f4       	brcc	.+4      	; 0x144 <Set_LED_Brightness+0x4e>
+			min_diff = diff;
+			quantized_level = brightness_levels[i];
+ 140:	52 2f       	mov	r21, r18
+	unsigned char quantized_level = 0;
+
+	for (int i = 0; i < 6; i++) {
+		unsigned char diff = (overall_brightness > brightness_levels[i]) ? (overall_brightness - brightness_levels[i]) : (brightness_levels[i] - overall_brightness);
+		if (diff < min_diff) {
+			min_diff = diff;
+ 142:	43 2f       	mov	r20, r19
+
+	// 6단계 중 가장 가까운 밝기 선택
+	unsigned char min_diff = 255;
+	unsigned char quantized_level = 0;
+
+	for (int i = 0; i < 6; i++) {
+ 144:	01 96       	adiw	r24, 0x01	; 1
+ 146:	86 30       	cpi	r24, 0x06	; 6
+ 148:	91 05       	cpc	r25, r1
+ 14a:	6c f3       	brlt	.-38     	; 0x126 <Set_LED_Brightness+0x30>
+		if (diff < min_diff) {
+			min_diff = diff;
+			quantized_level = brightness_levels[i];
+		}
+	}
+	led_brightness = quantized_level;
+ 14c:	50 93 07 01 	sts	0x0107, r21	; 0x800107 <led_brightness>
+ 150:	08 95       	ret
+
+00000152 <LED_SoftwarePWM>:
+
+// 소프트웨어 PWM으로 LED 밝기 제어
+void LED_SoftwarePWM(void) {
+	static unsigned char pwm_counter = 0;
+
+	if (pwm_counter < led_brightness) {
+ 152:	90 91 06 01 	lds	r25, 0x0106	; 0x800106 <__data_end>
+ 156:	80 91 07 01 	lds	r24, 0x0107	; 0x800107 <led_brightness>
+ 15a:	98 17       	cp	r25, r24
+ 15c:	20 f4       	brcc	.+8      	; 0x166 <LED_SoftwarePWM+0x14>
+		PORTE |= (1 << PE0);  // LED ON
+ 15e:	83 b1       	in	r24, 0x03	; 3
+ 160:	81 60       	ori	r24, 0x01	; 1
+ 162:	83 b9       	out	0x03, r24	; 3
+ 164:	03 c0       	rjmp	.+6      	; 0x16c <LED_SoftwarePWM+0x1a>
+		} else {
+		PORTE &= ~(1 << PE0); // LED OFF
+ 166:	83 b1       	in	r24, 0x03	; 3
+ 168:	8e 7f       	andi	r24, 0xFE	; 254
+ 16a:	83 b9       	out	0x03, r24	; 3
+	}
+
+	pwm_counter++;
+ 16c:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <__data_end>
+ 170:	8f 5f       	subi	r24, 0xFF	; 255
+ 172:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <__data_end>
+ 176:	08 95       	ret
+
+00000178 <main>:
+}
+
+int main(void) {
+	// 포트 설정
+	DDRE |= (1 << PE0);   // PE0 출력 (LED 연결)
+ 178:	82 b1       	in	r24, 0x02	; 2
+ 17a:	81 60       	ori	r24, 0x01	; 1
+ 17c:	82 b9       	out	0x02, r24	; 2
+	PORTE &= ~(1 << PE0); // LED 초기 OFF
+ 17e:	83 b1       	in	r24, 0x03	; 3
+ 180:	8e 7f       	andi	r24, 0xFE	; 254
+ 182:	83 b9       	out	0x03, r24	; 3
+
+	// ADC 설정 (ADC3, PF3)
+	DDRF &= ~(1 << PF3);  // 입력
+ 184:	e1 e6       	ldi	r30, 0x61	; 97
+ 186:	f0 e0       	ldi	r31, 0x00	; 0
+ 188:	80 81       	ld	r24, Z
+ 18a:	87 7f       	andi	r24, 0xF7	; 247
+ 18c:	80 83       	st	Z, r24
+	PORTF &= ~(1 << PF3); // 풀업 없음
+ 18e:	e2 e6       	ldi	r30, 0x62	; 98
+ 190:	f0 e0       	ldi	r31, 0x00	; 0
+ 192:	80 81       	ld	r24, Z
+ 194:	87 7f       	andi	r24, 0xF7	; 247
+ 196:	80 83       	st	Z, r24
+
+	ADMUX = (1 << REFS0) | 0x03; // AVcc 기준, ADC3 선택
+ 198:	83 e4       	ldi	r24, 0x43	; 67
+ 19a:	87 b9       	out	0x07, r24	; 7
+	ADCSRA = (1 << ADEN) | (1 << ADIE) | (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0);
+ 19c:	8f e8       	ldi	r24, 0x8F	; 143
+ 19e:	86 b9       	out	0x06, r24	; 6
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1a0:	85 e3       	ldi	r24, 0x35	; 53
+ 1a2:	8a 95       	dec	r24
+ 1a4:	f1 f7       	brne	.-4      	; 0x1a2 <main+0x2a>
+ 1a6:	00 00       	nop
+
+	_delay_us(10);
+
+	sei();                 // 인터럽트 허용
+ 1a8:	78 94       	sei
+	ADCSRA |= (1 << ADSC); // ADC 변환 시작
+ 1aa:	86 b1       	in	r24, 0x06	; 6
+ 1ac:	80 64       	ori	r24, 0x40	; 64
+ 1ae:	86 b9       	out	0x06, r24	; 6
+
+	while (1) {
+		Set_LED_Brightness(adc_data);
+ 1b0:	80 91 08 01 	lds	r24, 0x0108	; 0x800108 <adc_data>
+ 1b4:	90 91 09 01 	lds	r25, 0x0109	; 0x800109 <adc_data+0x1>
+ 1b8:	9e df       	rcall	.-196    	; 0xf6 <Set_LED_Brightness>
+
+		// 소프트웨어 PWM 동작 (약 5ms PWM 주기)
+		for (int i = 0; i < 50; i++) {
+ 1ba:	c0 e0       	ldi	r28, 0x00	; 0
+ 1bc:	d0 e0       	ldi	r29, 0x00	; 0
+			LED_SoftwarePWM();
+ 1be:	08 c0       	rjmp	.+16     	; 0x1d0 <main+0x58>
+ 1c0:	c8 df       	rcall	.-112    	; 0x152 <LED_SoftwarePWM>
+ 1c2:	8f e8       	ldi	r24, 0x8F	; 143
+ 1c4:	91 e0       	ldi	r25, 0x01	; 1
+ 1c6:	01 97       	sbiw	r24, 0x01	; 1
+ 1c8:	f1 f7       	brne	.-4      	; 0x1c6 <main+0x4e>
+ 1ca:	00 c0       	rjmp	.+0      	; 0x1cc <main+0x54>
+ 1cc:	00 00       	nop
+
+	while (1) {
+		Set_LED_Brightness(adc_data);
+
+		// 소프트웨어 PWM 동작 (약 5ms PWM 주기)
+		for (int i = 0; i < 50; i++) {
+ 1ce:	21 96       	adiw	r28, 0x01	; 1
+ 1d0:	c2 33       	cpi	r28, 0x32	; 50
+ 1d2:	d1 05       	cpc	r29, r1
+ 1d4:	ac f3       	brlt	.-22     	; 0x1c0 <main+0x48>
+ 1d6:	ec cf       	rjmp	.-40     	; 0x1b0 <main+0x38>
+
+000001d8 <__udivmodhi4>:
+ 1d8:	aa 1b       	sub	r26, r26
+ 1da:	bb 1b       	sub	r27, r27
+ 1dc:	51 e1       	ldi	r21, 0x11	; 17
+ 1de:	07 c0       	rjmp	.+14     	; 0x1ee <__udivmodhi4_ep>
+
+000001e0 <__udivmodhi4_loop>:
+ 1e0:	aa 1f       	adc	r26, r26
+ 1e2:	bb 1f       	adc	r27, r27
+ 1e4:	a6 17       	cp	r26, r22
+ 1e6:	b7 07       	cpc	r27, r23
+ 1e8:	10 f0       	brcs	.+4      	; 0x1ee <__udivmodhi4_ep>
+ 1ea:	a6 1b       	sub	r26, r22
+ 1ec:	b7 0b       	sbc	r27, r23
+
+000001ee <__udivmodhi4_ep>:
+ 1ee:	88 1f       	adc	r24, r24
+ 1f0:	99 1f       	adc	r25, r25
+ 1f2:	5a 95       	dec	r21
+ 1f4:	a9 f7       	brne	.-22     	; 0x1e0 <__udivmodhi4_loop>
+ 1f6:	80 95       	com	r24
+ 1f8:	90 95       	com	r25
+ 1fa:	bc 01       	movw	r22, r24
+ 1fc:	cd 01       	movw	r24, r26
+ 1fe:	08 95       	ret
+
+00000200 <_exit>:
+ 200:	f8 94       	cli
+
+00000202 <__stop_program>:
+ 202:	ff cf       	rjmp	.-2      	; 0x202 <__stop_program>
