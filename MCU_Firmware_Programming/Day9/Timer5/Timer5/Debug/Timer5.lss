@@ -1,0 +1,507 @@
+
+Timer5.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000012  00800100  000002c4  00000358  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000002c4  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000008  00800112  00800112  0000036a  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000036a  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000039c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000040  00000000  00000000  000003dc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000a88  00000000  00000000  0000041c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000087b  00000000  00000000  00000ea4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000043e  00000000  00000000  0000171f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  0000008c  00000000  00000000  00001b60  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000441  00000000  00000000  00001bec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000282  00000000  00000000  0000202d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000030  00000000  00000000  000022af  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	c8 c0       	rjmp	.+400    	; 0x1ce <__vector_15>
+  3e:	00 00       	nop
+  40:	91 c0       	rjmp	.+290    	; 0x164 <__vector_16>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e4 ec       	ldi	r30, 0xC4	; 196
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a2 31       	cpi	r26, 0x12	; 18
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a2 e1       	ldi	r26, 0x12	; 18
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	aa 31       	cpi	r26, 0x1A	; 26
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	ba d0       	rcall	.+372    	; 0x238 <main>
+  c4:	fd c0       	rjmp	.+506    	; 0x2c0 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <RSegment>:
+// 오른쪽 2자리 7-seg 출력 함수
+void RSegment(int N)
+{
+    int i;
+    unsigned char N10 = N / 10;
+    unsigned char N1 = N % 10;
+  c8:	6a e0       	ldi	r22, 0x0A	; 10
+  ca:	70 e0       	ldi	r23, 0x00	; 0
+  cc:	d2 d0       	rcall	.+420    	; 0x272 <__divmodhi4>
+  ce:	ac 01       	movw	r20, r24
+
+    for (i = 0; i < 5; i++) {
+  d0:	20 e0       	ldi	r18, 0x00	; 0
+  d2:	30 e0       	ldi	r19, 0x00	; 0
+  d4:	1c c0       	rjmp	.+56     	; 0x10e <RSegment+0x46>
+        PORTC = 0x0B;      // 오른쪽 3번째 자리 선택 (PC3=0, 나머지 1)
+  d6:	9b e0       	ldi	r25, 0x0B	; 11
+  d8:	95 bb       	out	0x15, r25	; 21
+        PORTA = Font[N10]; // 십의 자리 출력
+  da:	fb 01       	movw	r30, r22
+  dc:	ff 27       	eor	r31, r31
+  de:	e0 50       	subi	r30, 0x00	; 0
+  e0:	ff 4f       	sbci	r31, 0xFF	; 255
+  e2:	90 81       	ld	r25, Z
+  e4:	9b bb       	out	0x1b, r25	; 27
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  e6:	86 e6       	ldi	r24, 0x66	; 102
+  e8:	9e e0       	ldi	r25, 0x0E	; 14
+  ea:	01 97       	sbiw	r24, 0x01	; 1
+  ec:	f1 f7       	brne	.-4      	; 0xea <RSegment+0x22>
+  ee:	00 00       	nop
+        _delay_ms(1);
+
+        PORTC = 0x07;      // 오른쪽 4번째 자리 선택 (PC0=0)
+  f0:	97 e0       	ldi	r25, 0x07	; 7
+  f2:	95 bb       	out	0x15, r25	; 21
+        PORTA = Font[N1];  // 일의 자리 출력
+  f4:	fa 01       	movw	r30, r20
+  f6:	ff 27       	eor	r31, r31
+  f8:	e0 50       	subi	r30, 0x00	; 0
+  fa:	ff 4f       	sbci	r31, 0xFF	; 255
+  fc:	90 81       	ld	r25, Z
+  fe:	9b bb       	out	0x1b, r25	; 27
+ 100:	86 e6       	ldi	r24, 0x66	; 102
+ 102:	9e e0       	ldi	r25, 0x0E	; 14
+ 104:	01 97       	sbiw	r24, 0x01	; 1
+ 106:	f1 f7       	brne	.-4      	; 0x104 <RSegment+0x3c>
+ 108:	00 00       	nop
+{
+    int i;
+    unsigned char N10 = N / 10;
+    unsigned char N1 = N % 10;
+
+    for (i = 0; i < 5; i++) {
+ 10a:	2f 5f       	subi	r18, 0xFF	; 255
+ 10c:	3f 4f       	sbci	r19, 0xFF	; 255
+ 10e:	25 30       	cpi	r18, 0x05	; 5
+ 110:	31 05       	cpc	r19, r1
+ 112:	0c f3       	brlt	.-62     	; 0xd6 <RSegment+0xe>
+
+        PORTC = 0x07;      // 오른쪽 4번째 자리 선택 (PC0=0)
+        PORTA = Font[N1];  // 일의 자리 출력
+        _delay_ms(1);
+    }
+}
+ 114:	08 95       	ret
+
+00000116 <LSegment>:
+// 왼쪽 2자리 7-seg 출력 함수
+void LSegment(int N)
+{
+    int i;
+    unsigned char N10 = N / 10;
+    unsigned char N1 = N % 10;
+ 116:	6a e0       	ldi	r22, 0x0A	; 10
+ 118:	70 e0       	ldi	r23, 0x00	; 0
+ 11a:	ab d0       	rcall	.+342    	; 0x272 <__divmodhi4>
+ 11c:	ac 01       	movw	r20, r24
+
+    for (i = 0; i < 5; i++) {
+ 11e:	20 e0       	ldi	r18, 0x00	; 0
+ 120:	30 e0       	ldi	r19, 0x00	; 0
+ 122:	1c c0       	rjmp	.+56     	; 0x15c <LSegment+0x46>
+        PORTC = 0x0E;      // 왼쪽 1번째 자리 선택 (PC1=0)
+ 124:	9e e0       	ldi	r25, 0x0E	; 14
+ 126:	95 bb       	out	0x15, r25	; 21
+        PORTA = Font[N10]; // 십의 자리 출력
+ 128:	fb 01       	movw	r30, r22
+ 12a:	ff 27       	eor	r31, r31
+ 12c:	e0 50       	subi	r30, 0x00	; 0
+ 12e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 130:	90 81       	ld	r25, Z
+ 132:	9b bb       	out	0x1b, r25	; 27
+ 134:	86 e6       	ldi	r24, 0x66	; 102
+ 136:	9e e0       	ldi	r25, 0x0E	; 14
+ 138:	01 97       	sbiw	r24, 0x01	; 1
+ 13a:	f1 f7       	brne	.-4      	; 0x138 <LSegment+0x22>
+ 13c:	00 00       	nop
+        _delay_ms(1);
+
+        PORTC = 0x0D;      // 왼쪽 2번째 자리 선택 (PC2=0)
+ 13e:	9d e0       	ldi	r25, 0x0D	; 13
+ 140:	95 bb       	out	0x15, r25	; 21
+        PORTA = Font[N1];  // 일의 자리 출력
+ 142:	fa 01       	movw	r30, r20
+ 144:	ff 27       	eor	r31, r31
+ 146:	e0 50       	subi	r30, 0x00	; 0
+ 148:	ff 4f       	sbci	r31, 0xFF	; 255
+ 14a:	90 81       	ld	r25, Z
+ 14c:	9b bb       	out	0x1b, r25	; 27
+ 14e:	86 e6       	ldi	r24, 0x66	; 102
+ 150:	9e e0       	ldi	r25, 0x0E	; 14
+ 152:	01 97       	sbiw	r24, 0x01	; 1
+ 154:	f1 f7       	brne	.-4      	; 0x152 <LSegment+0x3c>
+ 156:	00 00       	nop
+{
+    int i;
+    unsigned char N10 = N / 10;
+    unsigned char N1 = N % 10;
+
+    for (i = 0; i < 5; i++) {
+ 158:	2f 5f       	subi	r18, 0xFF	; 255
+ 15a:	3f 4f       	sbci	r19, 0xFF	; 255
+ 15c:	25 30       	cpi	r18, 0x05	; 5
+ 15e:	31 05       	cpc	r19, r1
+ 160:	0c f3       	brlt	.-62     	; 0x124 <LSegment+0xe>
+
+        PORTC = 0x0D;      // 왼쪽 2번째 자리 선택 (PC2=0)
+        PORTA = Font[N1];  // 일의 자리 출력
+        _delay_ms(1);
+    }
+}
+ 162:	08 95       	ret
+
+00000164 <__vector_16>:
+
+// Timer0 Overflow 인터럽트 서비스 루틴
+ISR(TIMER0_OVF_vect)
+{
+ 164:	1f 92       	push	r1
+ 166:	0f 92       	push	r0
+ 168:	0f b6       	in	r0, 0x3f	; 63
+ 16a:	0f 92       	push	r0
+ 16c:	11 24       	eor	r1, r1
+ 16e:	8f 93       	push	r24
+ 170:	9f 93       	push	r25
+    tr_cnt++;
+ 172:	80 91 18 01 	lds	r24, 0x0118	; 0x800118 <tr_cnt>
+ 176:	90 91 19 01 	lds	r25, 0x0119	; 0x800119 <tr_cnt+0x1>
+ 17a:	01 96       	adiw	r24, 0x01	; 1
+ 17c:	90 93 19 01 	sts	0x0119, r25	; 0x800119 <tr_cnt+0x1>
+ 180:	80 93 18 01 	sts	0x0118, r24	; 0x800118 <tr_cnt>
+    if (tr_cnt >= 56) {   // 약 56 * 0.07ms ≈ 4ms 간격
+ 184:	80 91 18 01 	lds	r24, 0x0118	; 0x800118 <tr_cnt>
+ 188:	90 91 19 01 	lds	r25, 0x0119	; 0x800119 <tr_cnt+0x1>
+ 18c:	c8 97       	sbiw	r24, 0x38	; 56
+ 18e:	c4 f0       	brlt	.+48     	; 0x1c0 <__vector_16+0x5c>
+        tr_cnt = 0;
+ 190:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <tr_cnt+0x1>
+ 194:	10 92 18 01 	sts	0x0118, r1	; 0x800118 <tr_cnt>
+        mr_cnt++;         // 오른쪽 카운터 증가
+ 198:	80 91 16 01 	lds	r24, 0x0116	; 0x800116 <mr_cnt>
+ 19c:	90 91 17 01 	lds	r25, 0x0117	; 0x800117 <mr_cnt+0x1>
+ 1a0:	01 96       	adiw	r24, 0x01	; 1
+ 1a2:	90 93 17 01 	sts	0x0117, r25	; 0x800117 <mr_cnt+0x1>
+ 1a6:	80 93 16 01 	sts	0x0116, r24	; 0x800116 <mr_cnt>
+        if (mr_cnt > 99)  // 2자리 제한
+ 1aa:	80 91 16 01 	lds	r24, 0x0116	; 0x800116 <mr_cnt>
+ 1ae:	90 91 17 01 	lds	r25, 0x0117	; 0x800117 <mr_cnt+0x1>
+ 1b2:	84 36       	cpi	r24, 0x64	; 100
+ 1b4:	91 05       	cpc	r25, r1
+ 1b6:	24 f0       	brlt	.+8      	; 0x1c0 <__vector_16+0x5c>
+            mr_cnt = 0;
+ 1b8:	10 92 17 01 	sts	0x0117, r1	; 0x800117 <mr_cnt+0x1>
+ 1bc:	10 92 16 01 	sts	0x0116, r1	; 0x800116 <mr_cnt>
+    }
+}
+ 1c0:	9f 91       	pop	r25
+ 1c2:	8f 91       	pop	r24
+ 1c4:	0f 90       	pop	r0
+ 1c6:	0f be       	out	0x3f, r0	; 63
+ 1c8:	0f 90       	pop	r0
+ 1ca:	1f 90       	pop	r1
+ 1cc:	18 95       	reti
+
+000001ce <__vector_15>:
+
+// Timer0 Output Compare 인터럽트 서비스 루틴
+ISR(TIMER0_COMP_vect)
+{
+ 1ce:	1f 92       	push	r1
+ 1d0:	0f 92       	push	r0
+ 1d2:	0f b6       	in	r0, 0x3f	; 63
+ 1d4:	0f 92       	push	r0
+ 1d6:	11 24       	eor	r1, r1
+ 1d8:	8f 93       	push	r24
+ 1da:	9f 93       	push	r25
+    tl_cnt++;
+ 1dc:	80 91 14 01 	lds	r24, 0x0114	; 0x800114 <tl_cnt>
+ 1e0:	90 91 15 01 	lds	r25, 0x0115	; 0x800115 <tl_cnt+0x1>
+ 1e4:	01 96       	adiw	r24, 0x01	; 1
+ 1e6:	90 93 15 01 	sts	0x0115, r25	; 0x800115 <tl_cnt+0x1>
+ 1ea:	80 93 14 01 	sts	0x0114, r24	; 0x800114 <tl_cnt>
+    if (tl_cnt >= 28) {   // 약 28 * 0.07ms ≈ 2ms 간격
+ 1ee:	80 91 14 01 	lds	r24, 0x0114	; 0x800114 <tl_cnt>
+ 1f2:	90 91 15 01 	lds	r25, 0x0115	; 0x800115 <tl_cnt+0x1>
+ 1f6:	4c 97       	sbiw	r24, 0x1c	; 28
+ 1f8:	c4 f0       	brlt	.+48     	; 0x22a <__vector_15+0x5c>
+        tl_cnt = 0;
+ 1fa:	10 92 15 01 	sts	0x0115, r1	; 0x800115 <tl_cnt+0x1>
+ 1fe:	10 92 14 01 	sts	0x0114, r1	; 0x800114 <tl_cnt>
+        ml_cnt++;         // 왼쪽 카운터 증가
+ 202:	80 91 12 01 	lds	r24, 0x0112	; 0x800112 <__data_end>
+ 206:	90 91 13 01 	lds	r25, 0x0113	; 0x800113 <__data_end+0x1>
+ 20a:	01 96       	adiw	r24, 0x01	; 1
+ 20c:	90 93 13 01 	sts	0x0113, r25	; 0x800113 <__data_end+0x1>
+ 210:	80 93 12 01 	sts	0x0112, r24	; 0x800112 <__data_end>
+        if (ml_cnt > 99)  // 2자리 제한
+ 214:	80 91 12 01 	lds	r24, 0x0112	; 0x800112 <__data_end>
+ 218:	90 91 13 01 	lds	r25, 0x0113	; 0x800113 <__data_end+0x1>
+ 21c:	84 36       	cpi	r24, 0x64	; 100
+ 21e:	91 05       	cpc	r25, r1
+ 220:	24 f0       	brlt	.+8      	; 0x22a <__vector_15+0x5c>
+            ml_cnt = 0;
+ 222:	10 92 13 01 	sts	0x0113, r1	; 0x800113 <__data_end+0x1>
+ 226:	10 92 12 01 	sts	0x0112, r1	; 0x800112 <__data_end>
+    }
+}
+ 22a:	9f 91       	pop	r25
+ 22c:	8f 91       	pop	r24
+ 22e:	0f 90       	pop	r0
+ 230:	0f be       	out	0x3f, r0	; 63
+ 232:	0f 90       	pop	r0
+ 234:	1f 90       	pop	r1
+ 236:	18 95       	reti
+
+00000238 <main>:
+
+int main(void)
+{
+    // 포트 설정
+    DDRA = 0xFF;    // PORTA: 7-seg 데이터 출력 (출력)
+ 238:	9f ef       	ldi	r25, 0xFF	; 255
+ 23a:	9a bb       	out	0x1a, r25	; 26
+    DDRC = 0x0F;    // PORTC 하위 4비트: 7-seg 자리 선택 출력
+ 23c:	8f e0       	ldi	r24, 0x0F	; 15
+ 23e:	84 bb       	out	0x14, r24	; 20
+    PORTA = 0xFF;   // 초기값 - 모두 소등 (공통 애노드 기준)
+ 240:	9b bb       	out	0x1b, r25	; 27
+    PORTC = 0x0F;   // 자리 선택 모두 비활성화 (1로 셋팅)
+ 242:	85 bb       	out	0x15, r24	; 21
+
+    DDRB = 0x10;    // PB4 (OC0) 출력 설정
+ 244:	80 e1       	ldi	r24, 0x10	; 16
+ 246:	87 bb       	out	0x17, r24	; 23
+
+    ASSR = 0;       // 내부 클럭 사용
+ 248:	10 be       	out	0x30, r1	; 48
+    PWM 주파수 계산:
+      F_CPU = 14.7456MHz
+      분주 후 = 14,745,600 / 1024 ≈ 14,400 Hz
+      PWM 주기 = 1 / 14,400 ≈ 69.44 us
+    */
+    TCCR0 = 0x6F;  // 0b01101111: COM01=1, WGM01=1, WGM00=1, CS02=1, CS00=1
+ 24a:	8f e6       	ldi	r24, 0x6F	; 111
+ 24c:	83 bf       	out	0x33, r24	; 51
+
+    TIMSK = (1 << TOIE0) | (1 << OCIE0);  // 오버플로우 및 출력 비교 인터럽트 허용
+ 24e:	83 e0       	ldi	r24, 0x03	; 3
+ 250:	87 bf       	out	0x37, r24	; 55
+
+    TCNT0 = 0x00;  // 카운터 초기화
+ 252:	12 be       	out	0x32, r1	; 50
+    OCR0 = 102;    // 출력 비교값 설정 (PWM 듀티 사이클 제어)
+ 254:	86 e6       	ldi	r24, 0x66	; 102
+ 256:	81 bf       	out	0x31, r24	; 49
+
+    TIFR = 0x00;   // 인터럽트 플래그 초기화
+ 258:	16 be       	out	0x36, r1	; 54
+
+    sei();        // 전역 인터럽트 허용
+ 25a:	78 94       	sei
+
+    while (1) {
+        // 좌우 7-seg에 카운트 출력 (2자리씩)
+        LSegment(ml_cnt);
+ 25c:	80 91 12 01 	lds	r24, 0x0112	; 0x800112 <__data_end>
+ 260:	90 91 13 01 	lds	r25, 0x0113	; 0x800113 <__data_end+0x1>
+ 264:	58 df       	rcall	.-336    	; 0x116 <LSegment>
+        RSegment(mr_cnt);
+ 266:	80 91 16 01 	lds	r24, 0x0116	; 0x800116 <mr_cnt>
+ 26a:	90 91 17 01 	lds	r25, 0x0117	; 0x800117 <mr_cnt+0x1>
+ 26e:	2c df       	rcall	.-424    	; 0xc8 <RSegment>
+ 270:	f5 cf       	rjmp	.-22     	; 0x25c <main+0x24>
+
+00000272 <__divmodhi4>:
+ 272:	97 fb       	bst	r25, 7
+ 274:	07 2e       	mov	r0, r23
+ 276:	16 f4       	brtc	.+4      	; 0x27c <__divmodhi4+0xa>
+ 278:	00 94       	com	r0
+ 27a:	06 d0       	rcall	.+12     	; 0x288 <__divmodhi4_neg1>
+ 27c:	77 fd       	sbrc	r23, 7
+ 27e:	08 d0       	rcall	.+16     	; 0x290 <__divmodhi4_neg2>
+ 280:	0b d0       	rcall	.+22     	; 0x298 <__udivmodhi4>
+ 282:	07 fc       	sbrc	r0, 7
+ 284:	05 d0       	rcall	.+10     	; 0x290 <__divmodhi4_neg2>
+ 286:	3e f4       	brtc	.+14     	; 0x296 <__divmodhi4_exit>
+
+00000288 <__divmodhi4_neg1>:
+ 288:	90 95       	com	r25
+ 28a:	81 95       	neg	r24
+ 28c:	9f 4f       	sbci	r25, 0xFF	; 255
+ 28e:	08 95       	ret
+
+00000290 <__divmodhi4_neg2>:
+ 290:	70 95       	com	r23
+ 292:	61 95       	neg	r22
+ 294:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00000296 <__divmodhi4_exit>:
+ 296:	08 95       	ret
+
+00000298 <__udivmodhi4>:
+ 298:	aa 1b       	sub	r26, r26
+ 29a:	bb 1b       	sub	r27, r27
+ 29c:	51 e1       	ldi	r21, 0x11	; 17
+ 29e:	07 c0       	rjmp	.+14     	; 0x2ae <__udivmodhi4_ep>
+
+000002a0 <__udivmodhi4_loop>:
+ 2a0:	aa 1f       	adc	r26, r26
+ 2a2:	bb 1f       	adc	r27, r27
+ 2a4:	a6 17       	cp	r26, r22
+ 2a6:	b7 07       	cpc	r27, r23
+ 2a8:	10 f0       	brcs	.+4      	; 0x2ae <__udivmodhi4_ep>
+ 2aa:	a6 1b       	sub	r26, r22
+ 2ac:	b7 0b       	sbc	r27, r23
+
+000002ae <__udivmodhi4_ep>:
+ 2ae:	88 1f       	adc	r24, r24
+ 2b0:	99 1f       	adc	r25, r25
+ 2b2:	5a 95       	dec	r21
+ 2b4:	a9 f7       	brne	.-22     	; 0x2a0 <__udivmodhi4_loop>
+ 2b6:	80 95       	com	r24
+ 2b8:	90 95       	com	r25
+ 2ba:	bc 01       	movw	r22, r24
+ 2bc:	cd 01       	movw	r24, r26
+ 2be:	08 95       	ret
+
+000002c0 <_exit>:
+ 2c0:	f8 94       	cli
+
+000002c2 <__stop_program>:
+ 2c2:	ff cf       	rjmp	.-2      	; 0x2c2 <__stop_program>
