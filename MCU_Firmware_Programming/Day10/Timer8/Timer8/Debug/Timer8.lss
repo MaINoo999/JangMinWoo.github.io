@@ -1,0 +1,224 @@
+
+Timer8.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000010  00800100  0000011a  0000018e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000011a  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000019e  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000001d0  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  00000210  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000008c9  00000000  00000000  00000230  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000808  00000000  00000000  00000af9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002d2  00000000  00000000  00001301  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000024  00000000  00000000  000015d4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000401  00000000  00000000  000015f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000067  00000000  00000000  000019f9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000010  00000000  00000000  00001a60  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ea e1       	ldi	r30, 0x1A	; 26
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 31       	cpi	r26, 0x10	; 16
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	02 d0       	rcall	.+4      	; 0xb8 <main>
+  b4:	30 c0       	rjmp	.+96     	; 0x116 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <main>:
+};
+
+int main(void) {
+    unsigned char i;
+
+    DDRB = 0xE0;  // PB5, PB6, PB7를 출력으로 설정
+  b8:	80 ee       	ldi	r24, 0xE0	; 224
+  ba:	87 bb       	out	0x17, r24	; 23
+                  // 실질적으로 PB5(OC1A), PB6(OC1B)만 PWM 사용 가능
+
+    ASSR = 0x00;  // 비동기 타이머 미사용, 내부 클럭 사용
+  bc:	10 be       	out	0x30, r1	; 48
+
+    // Timer1 설정 (Phase Correct PWM, 8bit 모드)
+    // WGM13:0 = 0001, COM1A1/COM1B1 = 1 (비반전 출력)
+    TCCR1A = (1 << COM1A1) | (1 << COM1B1) | (1 << WGM10);  // 0xA9
+  be:	81 ea       	ldi	r24, 0xA1	; 161
+  c0:	8f bd       	out	0x2f, r24	; 47
+    TCCR1B = (1 << CS11);  // 분주비 8, 16MHz / 8 = 2MHz → 1tick = 0.5us
+  c2:	82 e0       	ldi	r24, 0x02	; 2
+  c4:	8e bd       	out	0x2e, r24	; 46
+                           // 주기 = 256 * 2 (업다운) * 0.5us = 256us
+    TCCR1C = 0x00;
+  c6:	10 92 7a 00 	sts	0x007A, r1	; 0x80007a <__TEXT_REGION_LENGTH__+0x7e007a>
+
+    while (1) {
+        for (i = 0; i < 5; i++) {
+  ca:	80 e0       	ldi	r24, 0x00	; 0
+  cc:	21 c0       	rjmp	.+66     	; 0x110 <main+0x58>
+            OCR1AL = RGB_Table[i][0];  // PB5 (Red 채널) 듀티 설정
+  ce:	e8 2f       	mov	r30, r24
+  d0:	f0 e0       	ldi	r31, 0x00	; 0
+  d2:	9f 01       	movw	r18, r30
+  d4:	22 0f       	add	r18, r18
+  d6:	33 1f       	adc	r19, r19
+  d8:	e2 0f       	add	r30, r18
+  da:	f3 1f       	adc	r31, r19
+  dc:	e0 50       	subi	r30, 0x00	; 0
+  de:	ff 4f       	sbci	r31, 0xFF	; 255
+  e0:	90 81       	ld	r25, Z
+  e2:	9a bd       	out	0x2a, r25	; 42
+            OCR1BL = RGB_Table[i][1];  // PB6 (Green 채널) 듀티 설정
+  e4:	91 81       	ldd	r25, Z+1	; 0x01
+  e6:	98 bd       	out	0x28, r25	; 40
+
+            // PB7은 타이머와 연결되지 않으므로 직접 ON/OFF 제어 가능 (소프트 PWM 필요 시 별도 구현)
+            if (RGB_Table[i][2] > 127) {
+  e8:	92 81       	ldd	r25, Z+2	; 0x02
+  ea:	99 23       	and	r25, r25
+  ec:	24 f4       	brge	.+8      	; 0xf6 <main+0x3e>
+                PORTB |= (1 << PB7);  // Blue ON
+  ee:	98 b3       	in	r25, 0x18	; 24
+  f0:	90 68       	ori	r25, 0x80	; 128
+  f2:	98 bb       	out	0x18, r25	; 24
+  f4:	03 c0       	rjmp	.+6      	; 0xfc <main+0x44>
+            } else {
+                PORTB &= ~(1 << PB7); // Blue OFF
+  f6:	98 b3       	in	r25, 0x18	; 24
+  f8:	9f 77       	andi	r25, 0x7F	; 127
+  fa:	98 bb       	out	0x18, r25	; 24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  fc:	2f ef       	ldi	r18, 0xFF	; 255
+  fe:	33 ed       	ldi	r19, 0xD3	; 211
+ 100:	90 e3       	ldi	r25, 0x30	; 48
+ 102:	21 50       	subi	r18, 0x01	; 1
+ 104:	30 40       	sbci	r19, 0x00	; 0
+ 106:	90 40       	sbci	r25, 0x00	; 0
+ 108:	e1 f7       	brne	.-8      	; 0x102 <main+0x4a>
+ 10a:	00 c0       	rjmp	.+0      	; 0x10c <main+0x54>
+ 10c:	00 00       	nop
+    TCCR1B = (1 << CS11);  // 분주비 8, 16MHz / 8 = 2MHz → 1tick = 0.5us
+                           // 주기 = 256 * 2 (업다운) * 0.5us = 256us
+    TCCR1C = 0x00;
+
+    while (1) {
+        for (i = 0; i < 5; i++) {
+ 10e:	8f 5f       	subi	r24, 0xFF	; 255
+ 110:	85 30       	cpi	r24, 0x05	; 5
+ 112:	e8 f2       	brcs	.-70     	; 0xce <main+0x16>
+ 114:	da cf       	rjmp	.-76     	; 0xca <main+0x12>
+
+00000116 <_exit>:
+ 116:	f8 94       	cli
+
+00000118 <__stop_program>:
+ 118:	ff cf       	rjmp	.-2      	; 0x118 <__stop_program>
