@@ -1,0 +1,765 @@
+
+Keypad.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000002c  00800100  00000388  0000041c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000388  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000012  0080012c  0080012c  00000448  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000448  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000478  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000000a8  00000000  00000000  000004b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00001288  00000000  00000000  00000560  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000af0  00000000  00000000  000017e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000742  00000000  00000000  000022d8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000148  00000000  00000000  00002a1c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000004d9  00000000  00000000  00002b64  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000007b5  00000000  00000000  0000303d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000088  00000000  00000000  000037f2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e8 e8       	ldi	r30, 0x88	; 136
+  a0:	f3 e0       	ldi	r31, 0x03	; 3
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	ac 32       	cpi	r26, 0x2C	; 44
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	ac e2       	ldi	r26, 0x2C	; 44
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	ae 33       	cpi	r26, 0x3E	; 62
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	23 d1       	rcall	.+582    	; 0x30a <main>
+  c4:	5f c1       	rjmp	.+702    	; 0x384 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <Port_Init>:
+#include "lcd.h"  // LCD에 필요한 함수가 정의된 헤더 파일 포함
+
+// 포트 초기화 함수
+void Port_Init(void)
+{
+	DDRG = 0x0f;  // 포트 G의 하위 4비트를 출력으로 설정 (LCD의 데이터 핀에 연결될 수 있음)
+  c8:	8f e0       	ldi	r24, 0x0F	; 15
+  ca:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__TEXT_REGION_LENGTH__+0x7e0064>
+	DDRB = 0xff;  // 포트 B 전체를 출력으로 설정 (LCD의 제어 핀에 연결될 수 있음)
+  ce:	8f ef       	ldi	r24, 0xFF	; 255
+  d0:	87 bb       	out	0x17, r24	; 23
+  d2:	08 95       	ret
+
+000000d4 <LCD_DATA>:
+}
+
+// LCD에 데이터를 전송하는 함수
+void LCD_DATA(Byte data)
+{
+	LCD_CTRL |= (1 << LCD_RS);  // RS를 1로 설정하여 데이터를 전달할 준비
+  d4:	e5 e6       	ldi	r30, 0x65	; 101
+  d6:	f0 e0       	ldi	r31, 0x00	; 0
+  d8:	90 81       	ld	r25, Z
+  da:	91 60       	ori	r25, 0x01	; 1
+  dc:	90 83       	st	Z, r25
+	LCD_CTRL &= ~(1 << LCD_RW); // RW를 0으로 설정하여 쓰기 모드로 설정
+  de:	90 81       	ld	r25, Z
+  e0:	9d 7f       	andi	r25, 0xFD	; 253
+  e2:	90 83       	st	Z, r25
+	LCD_CTRL |= (1 << LCD_EN);  // Enable 핀을 1로 설정하여 LCD와 데이터 전송
+  e4:	90 81       	ld	r25, Z
+  e6:	94 60       	ori	r25, 0x04	; 4
+  e8:	90 83       	st	Z, r25
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  ea:	96 ef       	ldi	r25, 0xF6	; 246
+  ec:	9a 95       	dec	r25
+  ee:	f1 f7       	brne	.-4      	; 0xec <LCD_DATA+0x18>
+	_delay_us(50);  // 데이터 안정화를 위한 지연 시간
+	LCD_WDATA = data;  // LCD에 데이터 전송
+  f0:	88 bb       	out	0x18, r24	; 24
+  f2:	86 ef       	ldi	r24, 0xF6	; 246
+  f4:	8a 95       	dec	r24
+  f6:	f1 f7       	brne	.-4      	; 0xf4 <LCD_DATA+0x20>
+	_delay_us(50);  // 데이터 안정화를 위한 지연 시간
+	LCD_CTRL &= ~(1 << LCD_EN);  // Enable 핀을 0으로 설정하여 데이터 전송 종료
+  f8:	80 81       	ld	r24, Z
+  fa:	8b 7f       	andi	r24, 0xFB	; 251
+  fc:	80 83       	st	Z, r24
+  fe:	08 95       	ret
+
+00000100 <LCD_Comm>:
+}
+
+// LCD에 명령을 전송하는 함수
+void LCD_Comm(Byte data)
+{
+	LCD_CTRL &= ~(1 << LCD_RS);  // RS를 0으로 설정하여 명령을 전달할 준비
+ 100:	e5 e6       	ldi	r30, 0x65	; 101
+ 102:	f0 e0       	ldi	r31, 0x00	; 0
+ 104:	90 81       	ld	r25, Z
+ 106:	9e 7f       	andi	r25, 0xFE	; 254
+ 108:	90 83       	st	Z, r25
+	LCD_CTRL &= ~(1 << LCD_RW);  // RW를 0으로 설정하여 쓰기 모드로 설정
+ 10a:	90 81       	ld	r25, Z
+ 10c:	9d 7f       	andi	r25, 0xFD	; 253
+ 10e:	90 83       	st	Z, r25
+	LCD_CTRL |= (1 << LCD_EN);   // Enable 핀을 1로 설정하여 LCD와 데이터 전송
+ 110:	90 81       	ld	r25, Z
+ 112:	94 60       	ori	r25, 0x04	; 4
+ 114:	90 83       	st	Z, r25
+ 116:	96 ef       	ldi	r25, 0xF6	; 246
+ 118:	9a 95       	dec	r25
+ 11a:	f1 f7       	brne	.-4      	; 0x118 <LCD_Comm+0x18>
+	_delay_us(50);  // 데이터 안정화를 위한 지연 시간
+	LCD_WDATA = data;  // LCD에 명령 전송
+ 11c:	88 bb       	out	0x18, r24	; 24
+ 11e:	86 ef       	ldi	r24, 0xF6	; 246
+ 120:	8a 95       	dec	r24
+ 122:	f1 f7       	brne	.-4      	; 0x120 <LCD_Comm+0x20>
+	_delay_us(50);  // 데이터 안정화를 위한 지연 시간
+	LCD_CTRL &= ~(1 << LCD_EN);  // Enable 핀을 0으로 설정하여 데이터 전송 종료
+ 124:	80 81       	ld	r24, Z
+ 126:	8b 7f       	andi	r24, 0xFB	; 251
+ 128:	80 83       	st	Z, r24
+ 12a:	08 95       	ret
+
+0000012c <LCD_CHAR>:
+}
+
+// LCD에 한 문자 출력하는 함수
+void LCD_CHAR(Byte c)
+{
+	LCD_DATA(c);  // LCD에 문자 데이터 전송
+ 12c:	d3 df       	rcall	.-90     	; 0xd4 <LCD_DATA>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 12e:	86 e6       	ldi	r24, 0x66	; 102
+ 130:	9e e0       	ldi	r25, 0x0E	; 14
+ 132:	01 97       	sbiw	r24, 0x01	; 1
+ 134:	f1 f7       	brne	.-4      	; 0x132 <LCD_CHAR+0x6>
+ 136:	00 00       	nop
+ 138:	08 95       	ret
+
+0000013a <LCD_STR>:
+	_delay_ms(1);  // 출력 안정화를 위한 지연 시간
+}
+
+// LCD에 문자열 출력하는 함수
+void LCD_STR(Byte* str)
+{
+ 13a:	cf 93       	push	r28
+ 13c:	df 93       	push	r29
+ 13e:	ec 01       	movw	r28, r24
+	// 문자열이 끝날 때까지 각 문자를 출력
+	while(*str != 0){
+ 140:	02 c0       	rjmp	.+4      	; 0x146 <LCD_STR+0xc>
+		LCD_CHAR(*str);  // 현재 문자를 출력
+ 142:	f4 df       	rcall	.-24     	; 0x12c <LCD_CHAR>
+		str++;  // 다음 문자로 이동
+ 144:	21 96       	adiw	r28, 0x01	; 1
+
+// LCD에 문자열 출력하는 함수
+void LCD_STR(Byte* str)
+{
+	// 문자열이 끝날 때까지 각 문자를 출력
+	while(*str != 0){
+ 146:	88 81       	ld	r24, Y
+ 148:	81 11       	cpse	r24, r1
+ 14a:	fb cf       	rjmp	.-10     	; 0x142 <LCD_STR+0x8>
+		LCD_CHAR(*str);  // 현재 문자를 출력
+		str++;  // 다음 문자로 이동
+	}
+}
+ 14c:	df 91       	pop	r29
+ 14e:	cf 91       	pop	r28
+ 150:	08 95       	ret
+
+00000152 <LCD_pos>:
+
+// LCD 커서 위치 설정 함수 (열, 행 지정)
+void LCD_pos(Byte col, Byte row)
+{
+	// LCD의 주소 계산하여 커서 위치 설정
+	LCD_Comm(0x80 | (row + col * 0x40));  // 첫 번째 행은 0x00부터, 두 번째 행은 0x40부터 시작
+ 152:	90 e4       	ldi	r25, 0x40	; 64
+ 154:	89 9f       	mul	r24, r25
+ 156:	60 0d       	add	r22, r0
+ 158:	11 24       	eor	r1, r1
+ 15a:	86 2f       	mov	r24, r22
+ 15c:	80 68       	ori	r24, 0x80	; 128
+ 15e:	d0 cf       	rjmp	.-96     	; 0x100 <LCD_Comm>
+ 160:	08 95       	ret
+
+00000162 <LCD_Clear>:
+}
+
+// LCD 화면 지우는 함수
+void LCD_Clear(void)
+{
+	LCD_Comm(0x01);  // 지우기 명령을 LCD에 전송
+ 162:	81 e0       	ldi	r24, 0x01	; 1
+ 164:	cd df       	rcall	.-102    	; 0x100 <LCD_Comm>
+ 166:	8c ec       	ldi	r24, 0xCC	; 204
+ 168:	9c e1       	ldi	r25, 0x1C	; 28
+ 16a:	01 97       	sbiw	r24, 0x01	; 1
+ 16c:	f1 f7       	brne	.-4      	; 0x16a <LCD_Clear+0x8>
+ 16e:	00 c0       	rjmp	.+0      	; 0x170 <LCD_Clear+0xe>
+ 170:	00 00       	nop
+ 172:	08 95       	ret
+
+00000174 <LCD_Init>:
+}
+
+// LCD 초기화 함수
+void LCD_Init(void)
+{
+	LCD_Comm(0x38);  // LCD를 8비트 모드로 설정
+ 174:	88 e3       	ldi	r24, 0x38	; 56
+ 176:	c4 df       	rcall	.-120    	; 0x100 <LCD_Comm>
+ 178:	8c ec       	ldi	r24, 0xCC	; 204
+ 17a:	9c e1       	ldi	r25, 0x1C	; 28
+ 17c:	01 97       	sbiw	r24, 0x01	; 1
+ 17e:	f1 f7       	brne	.-4      	; 0x17c <LCD_Init+0x8>
+ 180:	00 c0       	rjmp	.+0      	; 0x182 <LCD_Init+0xe>
+ 182:	00 00       	nop
+	_delay_ms(2);    // 안정화를 위한 지연 시간
+	LCD_Comm(0x38);  // LCD를 다시 8비트 모드로 설정
+ 184:	88 e3       	ldi	r24, 0x38	; 56
+ 186:	bc df       	rcall	.-136    	; 0x100 <LCD_Comm>
+ 188:	8c ec       	ldi	r24, 0xCC	; 204
+ 18a:	9c e1       	ldi	r25, 0x1C	; 28
+ 18c:	01 97       	sbiw	r24, 0x01	; 1
+ 18e:	f1 f7       	brne	.-4      	; 0x18c <LCD_Init+0x18>
+ 190:	00 c0       	rjmp	.+0      	; 0x192 <LCD_Init+0x1e>
+	_delay_ms(2);    // 안정화를 위한 지연 시간
+	LCD_Comm(0x38);  // LCD를 다시 8비트 모드로 설정
+ 192:	00 00       	nop
+ 194:	88 e3       	ldi	r24, 0x38	; 56
+ 196:	b4 df       	rcall	.-152    	; 0x100 <LCD_Comm>
+ 198:	8c ec       	ldi	r24, 0xCC	; 204
+ 19a:	9c e1       	ldi	r25, 0x1C	; 28
+ 19c:	01 97       	sbiw	r24, 0x01	; 1
+ 19e:	f1 f7       	brne	.-4      	; 0x19c <LCD_Init+0x28>
+ 1a0:	00 c0       	rjmp	.+0      	; 0x1a2 <LCD_Init+0x2e>
+	_delay_ms(2);    // 안정화를 위한 지연 시간
+	LCD_Comm(0x0e);  // LCD 화면을 켜고, 커서를 표시
+ 1a2:	00 00       	nop
+ 1a4:	8e e0       	ldi	r24, 0x0E	; 14
+ 1a6:	ac df       	rcall	.-168    	; 0x100 <LCD_Comm>
+ 1a8:	8c ec       	ldi	r24, 0xCC	; 204
+ 1aa:	9c e1       	ldi	r25, 0x1C	; 28
+ 1ac:	01 97       	sbiw	r24, 0x01	; 1
+ 1ae:	f1 f7       	brne	.-4      	; 0x1ac <LCD_Init+0x38>
+ 1b0:	00 c0       	rjmp	.+0      	; 0x1b2 <LCD_Init+0x3e>
+	_delay_ms(2);    // 안정화를 위한 지연 시간
+	LCD_Comm(0x06);  // 커서 이동 시 화면을 밀지 않도록 설정
+ 1b2:	00 00       	nop
+ 1b4:	86 e0       	ldi	r24, 0x06	; 6
+ 1b6:	a4 df       	rcall	.-184    	; 0x100 <LCD_Comm>
+ 1b8:	8c ec       	ldi	r24, 0xCC	; 204
+ 1ba:	9c e1       	ldi	r25, 0x1C	; 28
+ 1bc:	01 97       	sbiw	r24, 0x01	; 1
+ 1be:	f1 f7       	brne	.-4      	; 0x1bc <LCD_Init+0x48>
+ 1c0:	00 c0       	rjmp	.+0      	; 0x1c2 <LCD_Init+0x4e>
+	_delay_ms(2);    // 안정화를 위한 지연 시간
+	LCD_Clear();     // 화면 초기화
+ 1c2:	00 00       	nop
+ 1c4:	ce cf       	rjmp	.-100    	; 0x162 <LCD_Clear>
+ 1c6:	08 95       	ret
+
+000001c8 <Keypad_Init>:
+char input_buffer[MAX_INPUT_LEN];
+int input_index = 0;
+
+// 키패드 초기화 함수
+void Keypad_Init() {
+	DDRE = 0xF0;  // 상위 4비트 출력, 하위 4비트 입력
+ 1c8:	80 ef       	ldi	r24, 0xF0	; 240
+ 1ca:	82 b9       	out	0x02, r24	; 2
+ 1cc:	08 95       	ret
+
+000001ce <keypad>:
+// 키패드에서 눌린 값 읽는 함수 (4x3 키패드에 맞게 수정)
+char keypad() {
+	char key = 0;
+	
+	// 첫 번째 행 활성화
+	PORTE = 0x10;
+ 1ce:	80 e1       	ldi	r24, 0x10	; 16
+ 1d0:	83 b9       	out	0x03, r24	; 3
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1d2:	82 e6       	ldi	r24, 0x62	; 98
+ 1d4:	8a 95       	dec	r24
+ 1d6:	f1 f7       	brne	.-4      	; 0x1d4 <keypad+0x6>
+ 1d8:	00 00       	nop
+	_delay_us(20);
+	if (!(PINE & 0x10)) key = '1';
+ 1da:	0c 9b       	sbis	0x01, 4	; 1
+ 1dc:	02 c0       	rjmp	.+4      	; 0x1e2 <keypad+0x14>
+	DDRE = 0xF0;  // 상위 4비트 출력, 하위 4비트 입력
+}
+
+// 키패드에서 눌린 값 읽는 함수 (4x3 키패드에 맞게 수정)
+char keypad() {
+	char key = 0;
+ 1de:	80 e0       	ldi	r24, 0x00	; 0
+ 1e0:	01 c0       	rjmp	.+2      	; 0x1e4 <keypad+0x16>
+	
+	// 첫 번째 행 활성화
+	PORTE = 0x10;
+	_delay_us(20);
+	if (!(PINE & 0x10)) key = '1';
+ 1e2:	81 e3       	ldi	r24, 0x31	; 49
+	if (!(PINE & 0x20)) key = '2';
+ 1e4:	0d 9b       	sbis	0x01, 5	; 1
+ 1e6:	82 e3       	ldi	r24, 0x32	; 50
+	if (!(PINE & 0x40)) key = '3';
+ 1e8:	0e 9b       	sbis	0x01, 6	; 1
+ 1ea:	83 e3       	ldi	r24, 0x33	; 51
+
+	// 두 번째 행 활성화
+	PORTE = 0x20;
+ 1ec:	90 e2       	ldi	r25, 0x20	; 32
+ 1ee:	93 b9       	out	0x03, r25	; 3
+ 1f0:	92 e6       	ldi	r25, 0x62	; 98
+ 1f2:	9a 95       	dec	r25
+ 1f4:	f1 f7       	brne	.-4      	; 0x1f2 <keypad+0x24>
+ 1f6:	00 00       	nop
+	_delay_us(20);
+	if (!(PINE & 0x10)) key = '4';
+ 1f8:	0c 9b       	sbis	0x01, 4	; 1
+ 1fa:	84 e3       	ldi	r24, 0x34	; 52
+	if (!(PINE & 0x20)) key = '5';
+ 1fc:	0d 9b       	sbis	0x01, 5	; 1
+ 1fe:	85 e3       	ldi	r24, 0x35	; 53
+	if (!(PINE & 0x40)) key = '6';
+ 200:	0e 9b       	sbis	0x01, 6	; 1
+ 202:	86 e3       	ldi	r24, 0x36	; 54
+
+	// 세 번째 행 활성화
+	PORTE = 0x40;
+ 204:	90 e4       	ldi	r25, 0x40	; 64
+ 206:	93 b9       	out	0x03, r25	; 3
+ 208:	92 e6       	ldi	r25, 0x62	; 98
+ 20a:	9a 95       	dec	r25
+ 20c:	f1 f7       	brne	.-4      	; 0x20a <keypad+0x3c>
+ 20e:	00 00       	nop
+	_delay_us(20);
+	if (!(PINE & 0x10)) key = '7';
+ 210:	0c 9b       	sbis	0x01, 4	; 1
+ 212:	87 e3       	ldi	r24, 0x37	; 55
+	if (!(PINE & 0x20)) key = '8';
+ 214:	0d 9b       	sbis	0x01, 5	; 1
+ 216:	88 e3       	ldi	r24, 0x38	; 56
+	if (!(PINE & 0x40)) key = '9';
+ 218:	0e 9b       	sbis	0x01, 6	; 1
+ 21a:	89 e3       	ldi	r24, 0x39	; 57
+
+	// 네 번째 행 활성화
+	PORTE = 0x80;
+ 21c:	90 e8       	ldi	r25, 0x80	; 128
+ 21e:	93 b9       	out	0x03, r25	; 3
+ 220:	92 e6       	ldi	r25, 0x62	; 98
+ 222:	9a 95       	dec	r25
+ 224:	f1 f7       	brne	.-4      	; 0x222 <keypad+0x54>
+ 226:	00 00       	nop
+	_delay_us(20);
+	if (!(PINE & 0x10)) key = '*';
+ 228:	0c 9b       	sbis	0x01, 4	; 1
+ 22a:	8a e2       	ldi	r24, 0x2A	; 42
+	if (!(PINE & 0x20)) key = '0';
+ 22c:	0d 9b       	sbis	0x01, 5	; 1
+ 22e:	80 e3       	ldi	r24, 0x30	; 48
+	if (!(PINE & 0x40)) key = '#';
+ 230:	0e 9b       	sbis	0x01, 6	; 1
+ 232:	83 e2       	ldi	r24, 0x23	; 35
+
+	// 아무 키도 누르지 않으면 0 반환
+	return key;
+}
+ 234:	08 95       	ret
+
+00000236 <add_to_buffer>:
+
+// 입력 버퍼에 값 추가 (버퍼 크기 초과 방지)
+void add_to_buffer(char key) {
+	if (input_index < MAX_INPUT_LEN - 1) {  // 최대 입력 길이를 넘지 않도록
+ 236:	20 91 2c 01 	lds	r18, 0x012C	; 0x80012c <__data_end>
+ 23a:	30 91 2d 01 	lds	r19, 0x012D	; 0x80012d <__data_end+0x1>
+ 23e:	2f 30       	cpi	r18, 0x0F	; 15
+ 240:	31 05       	cpc	r19, r1
+ 242:	64 f4       	brge	.+24     	; 0x25c <add_to_buffer+0x26>
+		input_buffer[input_index++] = key;
+ 244:	a9 01       	movw	r20, r18
+ 246:	4f 5f       	subi	r20, 0xFF	; 255
+ 248:	5f 4f       	sbci	r21, 0xFF	; 255
+ 24a:	50 93 2d 01 	sts	0x012D, r21	; 0x80012d <__data_end+0x1>
+ 24e:	40 93 2c 01 	sts	0x012C, r20	; 0x80012c <__data_end>
+ 252:	f9 01       	movw	r30, r18
+ 254:	e2 5d       	subi	r30, 0xD2	; 210
+ 256:	fe 4f       	sbci	r31, 0xFE	; 254
+ 258:	80 83       	st	Z, r24
+ 25a:	08 95       	ret
+		} else {
+		// 버퍼가 가득 차면 오류 처리
+		LCD_Clear();
+ 25c:	82 df       	rcall	.-252    	; 0x162 <LCD_Clear>
+		LCD_pos(0, 0);
+ 25e:	60 e0       	ldi	r22, 0x00	; 0
+ 260:	80 e0       	ldi	r24, 0x00	; 0
+ 262:	77 df       	rcall	.-274    	; 0x152 <LCD_pos>
+		LCD_STR("Input too long!");
+ 264:	80 e0       	ldi	r24, 0x00	; 0
+ 266:	91 e0       	ldi	r25, 0x01	; 1
+ 268:	68 df       	rcall	.-304    	; 0x13a <LCD_STR>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 26a:	2f ef       	ldi	r18, 0xFF	; 255
+ 26c:	8f ef       	ldi	r24, 0xFF	; 255
+ 26e:	9c e2       	ldi	r25, 0x2C	; 44
+ 270:	21 50       	subi	r18, 0x01	; 1
+ 272:	80 40       	sbci	r24, 0x00	; 0
+ 274:	90 40       	sbci	r25, 0x00	; 0
+ 276:	e1 f7       	brne	.-8      	; 0x270 <add_to_buffer+0x3a>
+ 278:	00 c0       	rjmp	.+0      	; 0x27a <add_to_buffer+0x44>
+		_delay_ms(1000);  // 경고 메시지 잠시 표시 후 초기화
+		LCD_Clear();
+ 27a:	00 00       	nop
+ 27c:	72 df       	rcall	.-284    	; 0x162 <LCD_Clear>
+		input_index = 0;  // 입력 버퍼 초기화
+ 27e:	10 92 2d 01 	sts	0x012D, r1	; 0x80012d <__data_end+0x1>
+ 282:	10 92 2c 01 	sts	0x012C, r1	; 0x80012c <__data_end>
+ 286:	08 95       	ret
+
+00000288 <display_input>:
+	}
+}
+
+// 입력값을 LCD에 출력하는 함수
+void display_input() {
+ 288:	cf 93       	push	r28
+ 28a:	df 93       	push	r29
+	LCD_pos(1, 0);  // LCD의 두 번째 행에 출력 시작
+ 28c:	60 e0       	ldi	r22, 0x00	; 0
+ 28e:	81 e0       	ldi	r24, 0x01	; 1
+ 290:	60 df       	rcall	.-320    	; 0x152 <LCD_pos>
+	for (int i = 0; i < input_index; i++) {
+ 292:	c0 e0       	ldi	r28, 0x00	; 0
+ 294:	d0 e0       	ldi	r29, 0x00	; 0
+ 296:	06 c0       	rjmp	.+12     	; 0x2a4 <display_input+0x1c>
+		LCD_CHAR(input_buffer[i]);
+ 298:	fe 01       	movw	r30, r28
+ 29a:	e2 5d       	subi	r30, 0xD2	; 210
+ 29c:	fe 4f       	sbci	r31, 0xFE	; 254
+ 29e:	80 81       	ld	r24, Z
+ 2a0:	45 df       	rcall	.-374    	; 0x12c <LCD_CHAR>
+}
+
+// 입력값을 LCD에 출력하는 함수
+void display_input() {
+	LCD_pos(1, 0);  // LCD의 두 번째 행에 출력 시작
+	for (int i = 0; i < input_index; i++) {
+ 2a2:	21 96       	adiw	r28, 0x01	; 1
+ 2a4:	80 91 2c 01 	lds	r24, 0x012C	; 0x80012c <__data_end>
+ 2a8:	90 91 2d 01 	lds	r25, 0x012D	; 0x80012d <__data_end+0x1>
+ 2ac:	c8 17       	cp	r28, r24
+ 2ae:	d9 07       	cpc	r29, r25
+ 2b0:	9c f3       	brlt	.-26     	; 0x298 <display_input+0x10>
+		LCD_CHAR(input_buffer[i]);
+	}
+}
+ 2b2:	df 91       	pop	r29
+ 2b4:	cf 91       	pop	r28
+ 2b6:	08 95       	ret
+
+000002b8 <is_valid_input>:
+
+// 입력값 검증 (잘못된 키 처리)
+int is_valid_input(char key) {
+	// 예: 유효한 키는 '0'-'9', '*' 및 '#'만 허용
+	if ((key >= '0' && key <= '9') || key == '*' || key == '#') {
+ 2b8:	90 ed       	ldi	r25, 0xD0	; 208
+ 2ba:	98 0f       	add	r25, r24
+ 2bc:	9a 30       	cpi	r25, 0x0A	; 10
+ 2be:	38 f0       	brcs	.+14     	; 0x2ce <is_valid_input+0x16>
+ 2c0:	8a 32       	cpi	r24, 0x2A	; 42
+ 2c2:	41 f0       	breq	.+16     	; 0x2d4 <is_valid_input+0x1c>
+ 2c4:	83 32       	cpi	r24, 0x23	; 35
+ 2c6:	49 f4       	brne	.+18     	; 0x2da <is_valid_input+0x22>
+		return 1;  // 유효한 입력
+ 2c8:	81 e0       	ldi	r24, 0x01	; 1
+ 2ca:	90 e0       	ldi	r25, 0x00	; 0
+ 2cc:	08 95       	ret
+ 2ce:	81 e0       	ldi	r24, 0x01	; 1
+ 2d0:	90 e0       	ldi	r25, 0x00	; 0
+ 2d2:	08 95       	ret
+ 2d4:	81 e0       	ldi	r24, 0x01	; 1
+ 2d6:	90 e0       	ldi	r25, 0x00	; 0
+ 2d8:	08 95       	ret
+	}
+	return 0;  // 잘못된 입력
+ 2da:	80 e0       	ldi	r24, 0x00	; 0
+ 2dc:	90 e0       	ldi	r25, 0x00	; 0
+}
+ 2de:	08 95       	ret
+
+000002e0 <debounce_key>:
+
+// 키패드 디바운싱을 위한 함수
+int debounce_key(char last_key) {
+ 2e0:	cf 93       	push	r28
+ 2e2:	c8 2f       	mov	r28, r24
+ 2e4:	2f ef       	ldi	r18, 0xFF	; 255
+ 2e6:	8f e3       	ldi	r24, 0x3F	; 63
+ 2e8:	92 e0       	ldi	r25, 0x02	; 2
+ 2ea:	21 50       	subi	r18, 0x01	; 1
+ 2ec:	80 40       	sbci	r24, 0x00	; 0
+ 2ee:	90 40       	sbci	r25, 0x00	; 0
+ 2f0:	e1 f7       	brne	.-8      	; 0x2ea <debounce_key+0xa>
+ 2f2:	00 c0       	rjmp	.+0      	; 0x2f4 <debounce_key+0x14>
+ 2f4:	00 00       	nop
+	char current_key;
+	_delay_ms(50);  // 디바운싱 시간 대기
+	current_key = keypad();
+ 2f6:	6b df       	rcall	.-298    	; 0x1ce <keypad>
+
+	if (current_key == last_key) {
+ 2f8:	8c 13       	cpse	r24, r28
+ 2fa:	03 c0       	rjmp	.+6      	; 0x302 <debounce_key+0x22>
+		return 1;  // 키가 여전히 눌렸으면 유효한 입력
+ 2fc:	81 e0       	ldi	r24, 0x01	; 1
+ 2fe:	90 e0       	ldi	r25, 0x00	; 0
+ 300:	02 c0       	rjmp	.+4      	; 0x306 <debounce_key+0x26>
+	}
+	return 0;  // 키가 눌리지 않으면 유효하지 않은 입력
+ 302:	80 e0       	ldi	r24, 0x00	; 0
+ 304:	90 e0       	ldi	r25, 0x00	; 0
+}
+ 306:	cf 91       	pop	r28
+ 308:	08 95       	ret
+
+0000030a <main>:
+
+int main(void) {
+ 30a:	cf 93       	push	r28
+ 30c:	df 93       	push	r29
+ 30e:	cd b7       	in	r28, 0x3d	; 61
+ 310:	de b7       	in	r29, 0x3e	; 62
+ 312:	2c 97       	sbiw	r28, 0x0c	; 12
+ 314:	0f b6       	in	r0, 0x3f	; 63
+ 316:	f8 94       	cli
+ 318:	de bf       	out	0x3e, r29	; 62
+ 31a:	0f be       	out	0x3f, r0	; 63
+ 31c:	cd bf       	out	0x3d, r28	; 61
+	char str[] = "Keypad Test";
+ 31e:	8c e0       	ldi	r24, 0x0C	; 12
+ 320:	ef e1       	ldi	r30, 0x1F	; 31
+ 322:	f1 e0       	ldi	r31, 0x01	; 1
+ 324:	de 01       	movw	r26, r28
+ 326:	11 96       	adiw	r26, 0x01	; 1
+ 328:	01 90       	ld	r0, Z+
+ 32a:	0d 92       	st	X+, r0
+ 32c:	8a 95       	dec	r24
+ 32e:	e1 f7       	brne	.-8      	; 0x328 <main+0x1e>
+	char last_key = 0;  // 마지막으로 입력된 키를 추적
+	Port_Init();
+ 330:	cb de       	rcall	.-618    	; 0xc8 <Port_Init>
+	LCD_Init();     // LCD 초기화
+ 332:	20 df       	rcall	.-448    	; 0x174 <LCD_Init>
+	Keypad_Init();  // 키패드 초기화
+ 334:	49 df       	rcall	.-366    	; 0x1c8 <Keypad_Init>
+
+	LCD_pos(0, 0);
+ 336:	60 e0       	ldi	r22, 0x00	; 0
+ 338:	80 e0       	ldi	r24, 0x00	; 0
+ 33a:	0b df       	rcall	.-490    	; 0x152 <LCD_pos>
+	LCD_STR(str);   // "Keypad Test" 문자열 출력
+ 33c:	ce 01       	movw	r24, r28
+ 33e:	01 96       	adiw	r24, 0x01	; 1
+ 340:	fc de       	rcall	.-520    	; 0x13a <LCD_STR>
+
+	while (1) {
+		char ch = keypad();  // 키 입력값 읽기
+ 342:	45 df       	rcall	.-374    	; 0x1ce <keypad>
+ 344:	18 2f       	mov	r17, r24
+ 346:	88 23       	and	r24, r24
+
+		// 입력값이 있을 경우에만 처리
+		if (ch) {
+ 348:	e1 f3       	breq	.-8      	; 0x342 <main+0x38>
+			// 디바운싱 처리
+			if (debounce_key(ch)) {
+ 34a:	ca df       	rcall	.-108    	; 0x2e0 <debounce_key>
+ 34c:	89 2b       	or	r24, r25
+ 34e:	c9 f3       	breq	.-14     	; 0x342 <main+0x38>
+				if (is_valid_input(ch)) {
+ 350:	81 2f       	mov	r24, r17
+ 352:	b2 df       	rcall	.-156    	; 0x2b8 <is_valid_input>
+ 354:	89 2b       	or	r24, r25
+					add_to_buffer(ch);  // 유효한 입력이면 버퍼에 추가
+ 356:	19 f0       	breq	.+6      	; 0x35e <main+0x54>
+ 358:	81 2f       	mov	r24, r17
+ 35a:	6d df       	rcall	.-294    	; 0x236 <add_to_buffer>
+					} else {
+					// 잘못된 입력에 대한 경고 처리
+					LCD_Clear();
+ 35c:	11 c0       	rjmp	.+34     	; 0x380 <main+0x76>
+ 35e:	01 df       	rcall	.-510    	; 0x162 <LCD_Clear>
+					LCD_pos(0, 0);
+ 360:	60 e0       	ldi	r22, 0x00	; 0
+ 362:	80 e0       	ldi	r24, 0x00	; 0
+ 364:	f6 de       	rcall	.-532    	; 0x152 <LCD_pos>
+ 366:	80 e1       	ldi	r24, 0x10	; 16
+					LCD_STR("Invalid input!");
+ 368:	91 e0       	ldi	r25, 0x01	; 1
+ 36a:	e7 de       	rcall	.-562    	; 0x13a <LCD_STR>
+ 36c:	2f ef       	ldi	r18, 0xFF	; 255
+ 36e:	8f ef       	ldi	r24, 0xFF	; 255
+ 370:	9c e2       	ldi	r25, 0x2C	; 44
+ 372:	21 50       	subi	r18, 0x01	; 1
+ 374:	80 40       	sbci	r24, 0x00	; 0
+ 376:	90 40       	sbci	r25, 0x00	; 0
+ 378:	e1 f7       	brne	.-8      	; 0x372 <main+0x68>
+ 37a:	00 c0       	rjmp	.+0      	; 0x37c <main+0x72>
+ 37c:	00 00       	nop
+					_delay_ms(1000);  // 경고 메시지 잠시 표시 후 초기화
+					LCD_Clear();
+ 37e:	f1 de       	rcall	.-542    	; 0x162 <LCD_Clear>
+ 380:	83 df       	rcall	.-250    	; 0x288 <display_input>
+				}
+				display_input();  // 현재까지 입력된 값 LCD에 표시
+ 382:	df cf       	rjmp	.-66     	; 0x342 <main+0x38>
+
+00000384 <_exit>:
+ 384:	f8 94       	cli
+
+00000386 <__stop_program>:
+ 386:	ff cf       	rjmp	.-2      	; 0x386 <__stop_program>
