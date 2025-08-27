@@ -71,7 +71,7 @@ ATmega128 마이크로컨트롤러를 활용하여 2x16 Text LCD, 4x3 키패드,
 본 프로젝트를 통해 ATmega128 마이크로컨트롤러를 이용한 임베디드 시스템 개발 전반에 대한 깊이 있는 경험을 쌓았습니다. 특히 하드웨어 직접 제어(GPIO), 모듈별 드라이버 개발, 상태 머신을 활용한 복잡한 로직 구현, 그리고 디버깅 및 문제 해결 능력을 효과적으로 향상시킬 수 있었습니다. 사용자 요구사항(비밀번호 변경 기능, 입력 줄 변경)에 대한 유연한 코드 확장 능력과 실시간 피드백 시스템 구현 역량을 성공적으로 보여주었습니다.
 
 *   **프로젝트 동작 시연 영상**: https://github.com/MaINoo999/JangMinWoo.github.io/blob/86d186641ae3b5c104e52c1cb6c8b192193f17d2/Video/KakaoTalk_20250827_145832710.mp4
-*   **프로젝트 이미지**: images/KakaoTalk_20250827_125713340_01.jpg
+*   **프로젝트 이미지**: ![KakaoTalk_20250827_125713340_01](https://github.com/user-attachments/assets/e2ac45fc-d2a8-4615-bdab-c936df2fed84)
     *   (예: `![LCD 비밀번호 입력 화면](images/KakaoTalk_20250827_130314875.jpg)`)
     *   (예: `![LCD 비밀번호 입력 화면](images/KakaoTalk_20250827_130314875_01.jpg)`)
     *   (예: `![LCD 비밀번호 정답 화면](images/KakaoTalk_20250827_130314875_02.jpg)`)
