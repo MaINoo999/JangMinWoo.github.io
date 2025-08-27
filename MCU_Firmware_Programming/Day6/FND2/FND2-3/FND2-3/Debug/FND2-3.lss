@@ -1,0 +1,470 @@
+
+FND2-3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000014  00800100  000002a0  00000314  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000002a0  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000328  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000358  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000030  00000000  00000000  00000398  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000009af  00000000  00000000  000003c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000889  00000000  00000000  00000d77  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000373  00000000  00000000  00001600  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000054  00000000  00000000  00001974  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000044b  00000000  00000000  000019c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000018e  00000000  00000000  00001e13  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000020  00000000  00000000  00001fa1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e0 ea       	ldi	r30, 0xA0	; 160
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a4 31       	cpi	r26, 0x14	; 20
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	be d0       	rcall	.+380    	; 0x230 <main>
+  b4:	f3 c0       	rjmp	.+486    	; 0x29c <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <display_number>:
+	0b1101, // 십의 자리
+	0b1110  // 일의 자리
+};
+
+// 숫자를 7세그에 출력하는 함수
+void display_number(uint16_t number) {
+  b8:	cf 93       	push	r28
+  ba:	df 93       	push	r29
+  bc:	00 d0       	rcall	.+0      	; 0xbe <display_number+0x6>
+  be:	00 d0       	rcall	.+0      	; 0xc0 <display_number+0x8>
+  c0:	cd b7       	in	r28, 0x3d	; 61
+  c2:	de b7       	in	r29, 0x3e	; 62
+  c4:	ac 01       	movw	r20, r24
+	unsigned char digits[4];
+
+	digits[0] = number % 10;
+  c6:	9c 01       	movw	r18, r24
+  c8:	ad ec       	ldi	r26, 0xCD	; 205
+  ca:	bc ec       	ldi	r27, 0xCC	; 204
+  cc:	d8 d0       	rcall	.+432    	; 0x27e <__umulhisi3>
+  ce:	96 95       	lsr	r25
+  d0:	87 95       	ror	r24
+  d2:	96 95       	lsr	r25
+  d4:	87 95       	ror	r24
+  d6:	96 95       	lsr	r25
+  d8:	87 95       	ror	r24
+  da:	9c 01       	movw	r18, r24
+  dc:	22 0f       	add	r18, r18
+  de:	33 1f       	adc	r19, r19
+  e0:	88 0f       	add	r24, r24
+  e2:	99 1f       	adc	r25, r25
+  e4:	88 0f       	add	r24, r24
+  e6:	99 1f       	adc	r25, r25
+  e8:	88 0f       	add	r24, r24
+  ea:	99 1f       	adc	r25, r25
+  ec:	82 0f       	add	r24, r18
+  ee:	93 1f       	adc	r25, r19
+  f0:	9a 01       	movw	r18, r20
+  f2:	28 1b       	sub	r18, r24
+  f4:	39 0b       	sbc	r19, r25
+  f6:	29 83       	std	Y+1, r18	; 0x01
+	digits[1] = (number / 10) % 10;
+  f8:	9a 01       	movw	r18, r20
+  fa:	c1 d0       	rcall	.+386    	; 0x27e <__umulhisi3>
+  fc:	fc 01       	movw	r30, r24
+  fe:	f6 95       	lsr	r31
+ 100:	e7 95       	ror	r30
+ 102:	f6 95       	lsr	r31
+ 104:	e7 95       	ror	r30
+ 106:	f6 95       	lsr	r31
+ 108:	e7 95       	ror	r30
+ 10a:	9f 01       	movw	r18, r30
+ 10c:	b8 d0       	rcall	.+368    	; 0x27e <__umulhisi3>
+ 10e:	96 95       	lsr	r25
+ 110:	87 95       	ror	r24
+ 112:	96 95       	lsr	r25
+ 114:	87 95       	ror	r24
+ 116:	96 95       	lsr	r25
+ 118:	87 95       	ror	r24
+ 11a:	9c 01       	movw	r18, r24
+ 11c:	22 0f       	add	r18, r18
+ 11e:	33 1f       	adc	r19, r19
+ 120:	88 0f       	add	r24, r24
+ 122:	99 1f       	adc	r25, r25
+ 124:	88 0f       	add	r24, r24
+ 126:	99 1f       	adc	r25, r25
+ 128:	88 0f       	add	r24, r24
+ 12a:	99 1f       	adc	r25, r25
+ 12c:	82 0f       	add	r24, r18
+ 12e:	93 1f       	adc	r25, r19
+ 130:	9f 01       	movw	r18, r30
+ 132:	28 1b       	sub	r18, r24
+ 134:	39 0b       	sbc	r19, r25
+ 136:	2a 83       	std	Y+2, r18	; 0x02
+	digits[2] = (number / 100) % 10;
+ 138:	9a 01       	movw	r18, r20
+ 13a:	36 95       	lsr	r19
+ 13c:	27 95       	ror	r18
+ 13e:	36 95       	lsr	r19
+ 140:	27 95       	ror	r18
+ 142:	ab e7       	ldi	r26, 0x7B	; 123
+ 144:	b4 e1       	ldi	r27, 0x14	; 20
+ 146:	9b d0       	rcall	.+310    	; 0x27e <__umulhisi3>
+ 148:	fc 01       	movw	r30, r24
+ 14a:	f6 95       	lsr	r31
+ 14c:	e7 95       	ror	r30
+ 14e:	9f 01       	movw	r18, r30
+ 150:	ad ec       	ldi	r26, 0xCD	; 205
+ 152:	bc ec       	ldi	r27, 0xCC	; 204
+ 154:	94 d0       	rcall	.+296    	; 0x27e <__umulhisi3>
+ 156:	96 95       	lsr	r25
+ 158:	87 95       	ror	r24
+ 15a:	96 95       	lsr	r25
+ 15c:	87 95       	ror	r24
+ 15e:	96 95       	lsr	r25
+ 160:	87 95       	ror	r24
+ 162:	9c 01       	movw	r18, r24
+ 164:	22 0f       	add	r18, r18
+ 166:	33 1f       	adc	r19, r19
+ 168:	88 0f       	add	r24, r24
+ 16a:	99 1f       	adc	r25, r25
+ 16c:	88 0f       	add	r24, r24
+ 16e:	99 1f       	adc	r25, r25
+ 170:	88 0f       	add	r24, r24
+ 172:	99 1f       	adc	r25, r25
+ 174:	82 0f       	add	r24, r18
+ 176:	93 1f       	adc	r25, r19
+ 178:	9f 01       	movw	r18, r30
+ 17a:	28 1b       	sub	r18, r24
+ 17c:	39 0b       	sbc	r19, r25
+ 17e:	2b 83       	std	Y+3, r18	; 0x03
+	digits[3] = (number / 1000) % 10;
+ 180:	9a 01       	movw	r18, r20
+ 182:	36 95       	lsr	r19
+ 184:	27 95       	ror	r18
+ 186:	36 95       	lsr	r19
+ 188:	27 95       	ror	r18
+ 18a:	36 95       	lsr	r19
+ 18c:	27 95       	ror	r18
+ 18e:	a5 ec       	ldi	r26, 0xC5	; 197
+ 190:	b0 e2       	ldi	r27, 0x20	; 32
+ 192:	75 d0       	rcall	.+234    	; 0x27e <__umulhisi3>
+ 194:	ac 01       	movw	r20, r24
+ 196:	52 95       	swap	r21
+ 198:	42 95       	swap	r20
+ 19a:	4f 70       	andi	r20, 0x0F	; 15
+ 19c:	45 27       	eor	r20, r21
+ 19e:	5f 70       	andi	r21, 0x0F	; 15
+ 1a0:	45 27       	eor	r20, r21
+ 1a2:	9a 01       	movw	r18, r20
+ 1a4:	ad ec       	ldi	r26, 0xCD	; 205
+ 1a6:	bc ec       	ldi	r27, 0xCC	; 204
+ 1a8:	6a d0       	rcall	.+212    	; 0x27e <__umulhisi3>
+ 1aa:	96 95       	lsr	r25
+ 1ac:	87 95       	ror	r24
+ 1ae:	96 95       	lsr	r25
+ 1b0:	87 95       	ror	r24
+ 1b2:	96 95       	lsr	r25
+ 1b4:	87 95       	ror	r24
+ 1b6:	9c 01       	movw	r18, r24
+ 1b8:	22 0f       	add	r18, r18
+ 1ba:	33 1f       	adc	r19, r19
+ 1bc:	88 0f       	add	r24, r24
+ 1be:	99 1f       	adc	r25, r25
+ 1c0:	88 0f       	add	r24, r24
+ 1c2:	99 1f       	adc	r25, r25
+ 1c4:	88 0f       	add	r24, r24
+ 1c6:	99 1f       	adc	r25, r25
+ 1c8:	82 0f       	add	r24, r18
+ 1ca:	93 1f       	adc	r25, r19
+ 1cc:	fa 01       	movw	r30, r20
+ 1ce:	e8 1b       	sub	r30, r24
+ 1d0:	f9 0b       	sbc	r31, r25
+ 1d2:	ec 83       	std	Y+4, r30	; 0x04
+
+	for (int i = 0; i < 4; i++) {
+ 1d4:	80 e0       	ldi	r24, 0x00	; 0
+ 1d6:	90 e0       	ldi	r25, 0x00	; 0
+ 1d8:	19 c0       	rjmp	.+50     	; 0x20c <display_number+0x154>
+		PORTB = Font[digits[i]];  // 세그먼트 출력
+ 1da:	e1 e0       	ldi	r30, 0x01	; 1
+ 1dc:	f0 e0       	ldi	r31, 0x00	; 0
+ 1de:	ec 0f       	add	r30, r28
+ 1e0:	fd 1f       	adc	r31, r29
+ 1e2:	e8 0f       	add	r30, r24
+ 1e4:	f9 1f       	adc	r31, r25
+ 1e6:	e0 81       	ld	r30, Z
+ 1e8:	f0 e0       	ldi	r31, 0x00	; 0
+ 1ea:	ec 5f       	subi	r30, 0xFC	; 252
+ 1ec:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1ee:	20 81       	ld	r18, Z
+ 1f0:	28 bb       	out	0x18, r18	; 24
+		PORTG = digitSelect[i];   // 자릿수 선택 (LOW)
+ 1f2:	fc 01       	movw	r30, r24
+ 1f4:	e0 50       	subi	r30, 0x00	; 0
+ 1f6:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1f8:	20 81       	ld	r18, Z
+ 1fa:	20 93 65 00 	sts	0x0065, r18	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1fe:	e3 ef       	ldi	r30, 0xF3	; 243
+ 200:	f1 e0       	ldi	r31, 0x01	; 1
+ 202:	31 97       	sbiw	r30, 0x01	; 1
+ 204:	f1 f7       	brne	.-4      	; 0x202 <display_number+0x14a>
+ 206:	00 c0       	rjmp	.+0      	; 0x208 <display_number+0x150>
+ 208:	00 00       	nop
+	digits[0] = number % 10;
+	digits[1] = (number / 10) % 10;
+	digits[2] = (number / 100) % 10;
+	digits[3] = (number / 1000) % 10;
+
+	for (int i = 0; i < 4; i++) {
+ 20a:	01 96       	adiw	r24, 0x01	; 1
+ 20c:	84 30       	cpi	r24, 0x04	; 4
+ 20e:	91 05       	cpc	r25, r1
+ 210:	24 f3       	brlt	.-56     	; 0x1da <display_number+0x122>
+		PORTB = Font[digits[i]];  // 세그먼트 출력
+		PORTG = digitSelect[i];   // 자릿수 선택 (LOW)
+		_delay_ms(2);
+	}
+
+	PORTG = 0xFF; // 자릿수 OFF
+ 212:	8f ef       	ldi	r24, 0xFF	; 255
+ 214:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+}
+ 218:	0f 90       	pop	r0
+ 21a:	0f 90       	pop	r0
+ 21c:	0f 90       	pop	r0
+ 21e:	0f 90       	pop	r0
+ 220:	df 91       	pop	r29
+ 222:	cf 91       	pop	r28
+ 224:	08 95       	ret
+
+00000226 <fnd_off>:
+
+// FND OFF 함수
+void fnd_off() {
+	PORTB = 0x00;  // 세그먼트 OFF
+ 226:	18 ba       	out	0x18, r1	; 24
+	PORTG = 0xFF;  // 모든 자릿수 OFF
+ 228:	8f ef       	ldi	r24, 0xFF	; 255
+ 22a:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+ 22e:	08 95       	ret
+
+00000230 <main>:
+}
+
+int main(void)
+{
+	// 포트 설정
+	DDRB = 0xFF;   // PORTB: FND 세그먼트 출력
+ 230:	8f ef       	ldi	r24, 0xFF	; 255
+ 232:	87 bb       	out	0x17, r24	; 23
+	DDRG = 0xFF;   // PORTG: FND 자릿수 제어
+ 234:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__TEXT_REGION_LENGTH__+0x7e0064>
+	DDRE = 0xFF;   // PORTE: LED 출력
+ 238:	82 b9       	out	0x02, r24	; 2
+	DDRD = 0x00;   // PORTD: 버튼 입력
+ 23a:	11 ba       	out	0x11, r1	; 17
+	PORTD = 0xFF;  // 내부 풀업 저항 활성화
+ 23c:	82 bb       	out	0x12, r24	; 18
+
+	PORTE = 0x00;  // LED OFF 초기화
+ 23e:	13 b8       	out	0x03, r1	; 3
+	PORTG = 0xFF;  // 모든 자릿수 OFF
+ 240:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+	PORTB = 0x00;  // 세그먼트 OFF
+ 244:	18 ba       	out	0x18, r1	; 24
+
+	uint16_t counter = 0;
+ 246:	00 e0       	ldi	r16, 0x00	; 0
+ 248:	10 e0       	ldi	r17, 0x00	; 0
+ 24a:	01 c0       	rjmp	.+2      	; 0x24e <main+0x1e>
+ 24c:	8c 2f       	mov	r24, r28
+	uint8_t prev_buttons = 0xFF;
+
+	while (1)
+	{
+		uint8_t buttons = PIND;
+ 24e:	c0 b3       	in	r28, 0x10	; 16
+
+		// 버튼 눌림 감지 (이전엔 HIGH, 지금 LOW → 새롭게 눌린 상태)
+		uint8_t pressed = (prev_buttons & ~buttons);
+ 250:	9c 2f       	mov	r25, r28
+ 252:	90 95       	com	r25
+ 254:	89 23       	and	r24, r25
+
+		if (pressed != 0) {
+ 256:	59 f0       	breq	.+22     	; 0x26e <main+0x3e>
+			if (pressed & (1 << 0)) {  // 8번 버튼(PIND7) 눌림 감지
+ 258:	80 fd       	sbrc	r24, 0
+ 25a:	07 c0       	rjmp	.+14     	; 0x26a <main+0x3a>
+				counter = 0;           // 숫자 초기화
+				} else if (counter < 9999) {
+ 25c:	0f 30       	cpi	r16, 0x0F	; 15
+ 25e:	87 e2       	ldi	r24, 0x27	; 39
+ 260:	18 07       	cpc	r17, r24
+ 262:	28 f4       	brcc	.+10     	; 0x26e <main+0x3e>
+				counter++;             // 나머지 버튼은 카운터 증가
+ 264:	0f 5f       	subi	r16, 0xFF	; 255
+ 266:	1f 4f       	sbci	r17, 0xFF	; 255
+ 268:	02 c0       	rjmp	.+4      	; 0x26e <main+0x3e>
+		// 버튼 눌림 감지 (이전엔 HIGH, 지금 LOW → 새롭게 눌린 상태)
+		uint8_t pressed = (prev_buttons & ~buttons);
+
+		if (pressed != 0) {
+			if (pressed & (1 << 0)) {  // 8번 버튼(PIND7) 눌림 감지
+				counter = 0;           // 숫자 초기화
+ 26a:	00 e0       	ldi	r16, 0x00	; 0
+ 26c:	10 e0       	ldi	r17, 0x00	; 0
+		}
+
+		prev_buttons = buttons;
+
+		// LED 상태 업데이트 (버튼과 1:1 매칭)
+		PORTE = buttons;
+ 26e:	c3 b9       	out	0x03, r28	; 3
+
+		// 버튼이 눌려 있으면 FND 표시
+		if (buttons != 0xFF) {
+ 270:	cf 3f       	cpi	r28, 0xFF	; 255
+ 272:	19 f0       	breq	.+6      	; 0x27a <main+0x4a>
+			display_number(counter);
+ 274:	c8 01       	movw	r24, r16
+ 276:	20 df       	rcall	.-448    	; 0xb8 <display_number>
+ 278:	e9 cf       	rjmp	.-46     	; 0x24c <main+0x1c>
+			} else {
+			fnd_off();  // 버튼 안 눌렸으면 FND OFF
+ 27a:	d5 df       	rcall	.-86     	; 0x226 <fnd_off>
+ 27c:	e7 cf       	rjmp	.-50     	; 0x24c <main+0x1c>
+
+0000027e <__umulhisi3>:
+ 27e:	a2 9f       	mul	r26, r18
+ 280:	b0 01       	movw	r22, r0
+ 282:	b3 9f       	mul	r27, r19
+ 284:	c0 01       	movw	r24, r0
+ 286:	a3 9f       	mul	r26, r19
+ 288:	70 0d       	add	r23, r0
+ 28a:	81 1d       	adc	r24, r1
+ 28c:	11 24       	eor	r1, r1
+ 28e:	91 1d       	adc	r25, r1
+ 290:	b2 9f       	mul	r27, r18
+ 292:	70 0d       	add	r23, r0
+ 294:	81 1d       	adc	r24, r1
+ 296:	11 24       	eor	r1, r1
+ 298:	91 1d       	adc	r25, r1
+ 29a:	08 95       	ret
+
+0000029c <_exit>:
+ 29c:	f8 94       	cli
+
+0000029e <__stop_program>:
+ 29e:	ff cf       	rjmp	.-2      	; 0x29e <__stop_program>
