@@ -72,19 +72,19 @@ ATmega128 마이크로컨트롤러를 활용하여 2x16 Text LCD, 4x3 키패드,
 
 *   **프로젝트 동작 시연 영상**: https://github.com/MaINoo999/JangMinWoo.github.io/blob/86d186641ae3b5c104e52c1cb6c8b192193f17d2/Video/KakaoTalk_20250827_145832710.mp4
 *   **프로젝트 이미지**: ![KakaoTalk_20250827_125713340_01](https://github.com/user-attachments/assets/e2ac45fc-d2a8-4615-bdab-c936df2fed84)
-    * [LCD 비밀번호 입력 화면]!(images/KakaoTalk_20250827_130314875.jpg)
-    * [LCD 비밀번호 입력 화면]!(images/KakaoTalk_20250827_130314875_01.jpg)
-    * [LCD 비밀번호 정답 화면]!(images/KakaoTalk_20250827_130314875_02.jpg)
-    * [LCD 비밀번호 정답 입력후 초기화 화면]!(images/KakaoTalk_20250827_130314875_03.jpg)
-    * [LCD 비밀번호 오답 화면]!(images/KakaoTalk_20250827_130314875_14.jpg)
-    * [LCD 비밀번호 오답 입력후 초기화 화면]!(images/KakaoTalk_20250827_130314875_05.jpg)
-    * [LCD 관리자 비밀번호 입력 화면]!(images/KakaoTalk_20250827_130314875_06.jpg)
-    * [LCD 관리자 비밀번호 입력 후 비밀번호 변경 화면]!(images/KakaoTalk_20250827_130314875_07.jpg)
-    * [LCD 비밀번호 변경 화면]!(images/KakaoTalk_20250827_130314875_09.jpg)
-    * [LCD 비밀번호 변경 완료 화면]!(images/KakaoTalk_20250827_130314875_10.jpg)
-    * [LCD 비밀번호 변경 완료 후 초기화 화면]!(images/KakaoTalk_20250827_130314875_11.jpg)
-    * [LCD 비밀번호 변경 확인 화면]!(images/KakaoTalk_20250827_130314875_13.jpg)
-    * [LCD 비밀번호 변경 확인 완료 화면]!(images/KakaoTalk_20250827_130314875_12.jpg)
+    * ![LCD 비밀번호 입력 화면]!(images/KakaoTalk_20250827_130314875.jpg)
+    * ![LCD 비밀번호 입력 화면]!(images/KakaoTalk_20250827_130314875_01.jpg)
+    * ![LCD 비밀번호 정답 화면]!(images/KakaoTalk_20250827_130314875_02.jpg)
+    * ![LCD 비밀번호 정답 입력후 초기화 화면]!(images/KakaoTalk_20250827_130314875_03.jpg)
+    * ![LCD 비밀번호 오답 화면]!(images/KakaoTalk_20250827_130314875_14.jpg)
+    * ![LCD 비밀번호 오답 입력후 초기화 화면]!(images/KakaoTalk_20250827_130314875_05.jpg)
+    * ![LCD 관리자 비밀번호 입력 화면]!(images/KakaoTalk_20250827_130314875_06.jpg)
+    * ![LCD 관리자 비밀번호 입력 후 비밀번호 변경 화면]!(images/KakaoTalk_20250827_130314875_07.jpg)
+    * ![LCD 비밀번호 변경 화면]!(images/KakaoTalk_20250827_130314875_09.jpg)
+    * ![LCD 비밀번호 변경 완료 화면]!(images/KakaoTalk_20250827_130314875_10.jpg)
+    * ![LCD 비밀번호 변경 완료 후 초기화 화면]!(images/KakaoTalk_20250827_130314875_11.jpg)
+    * ![LCD 비밀번호 변경 확인 화면]!(images/KakaoTalk_20250827_130314875_13.jpg)
+    * ![LCD 비밀번호 변경 확인 완료 화면]!(images/KakaoTalk_20250827_130314875_12.jpg)
 
 
 
